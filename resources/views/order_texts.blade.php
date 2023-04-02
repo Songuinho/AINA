@@ -1,4 +1,8 @@
-@extends('layouts.mainLayout')
+@extends('layouts.mainLayout' , ['focus' => "ordertext"])
+
+@section('title')
+Aina | Commander des textes
+@endsection
 
 @section('content')
 

@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, "index"])->name('home');
+
 Route::get('/contacter-nous', function(){
     return view('contact');
 })->name('contact');
@@ -31,10 +32,10 @@ Route::get('/commander-un-devis',  function(){
     return view('order_quote');
 })->name('orderquote');
 
-Route::get('/Se connecter',  function(){
-    return view('login');
+Route::get('/Se-connecter',  function(){
+    return view('auth.login')->with(["focus" => " "]);
 })->name('login');
 
-Route::get('/S\'inscrire',  function(){
-    return view('register');
+Route::get('/Inscription',  function(){
+    return view('auth.register')->with(["focus" => " "]);
 })->name('register');

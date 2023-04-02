@@ -1,7 +1,10 @@
-@extends('layouts.mainLayout')
+@extends('layouts.mainLayout', ['focus' => "faq"] )
+
+@section('title')
+Aina | FAQ
+@endsection
 
 @section('content')
-
 
 <!-- ======= Hero Section ======= -->
 <section id="hero">

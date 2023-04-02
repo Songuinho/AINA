@@ -1,5 +1,8 @@
-@extends('layouts.mainLayout')
+@extends('layouts.mainLayout' , ['focus' => "orderquote"])
 
+@section('title')
+Aina | Commander un devis
+@endsection
 
 @section('content')
 <!-- ======= Hero Section ======= -->

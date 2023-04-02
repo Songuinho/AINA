@@ -1,5 +1,8 @@
-@extends('layouts.mainLayout')
+@extends('layouts.mainLayout' , ['focus' => "home"])
 
+@section('title')
+Aina | Accueil
+@endsection
 
 @section('content')
 
@@ -14,7 +17,7 @@
           <h2>We are team of talented designers making websites with Bootstrap</h2>
           <div class="d-flex">
             <div class="text-center text-lg-start flex-grow-1">
-              <a href="#" class="btn-get-started scrollto">Commanderdes textes</a>
+              <a href="#" class="btn-get-started scrollto">Commander des textes</a>
             </div>
             <div class="text-center text-lg-start flex-grow-1">
               <a href="#" class="btn-get-started scrollto">Demander un devis</a>
@@ -476,6 +479,7 @@
 
 </main><!-- End #main -->
 
+<!-- Section Contact -->
 <section id="contact" class="contact">
   <div class="container">
 
