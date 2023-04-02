@@ -404,7 +404,7 @@
 
         <div class="col-lg-3 col-6">
           <div class="box" data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/img/gallery/ecommerce.svg" alt="...." />
+            <img src="assets/img/gallery/ecommerce.svg" alt="image/ecommerce" />
 
             <p>Rédaction pour les TPE, PME, Start-up puis en dessous de ces mots </p>
             <ul>
