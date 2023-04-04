@@ -13,7 +13,7 @@ Aina | Contact
     <div class="row justify-content-between">
       <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
         <div data-aos="zoom-out">
-          <h2>We are team of talented designers making websites with Bootstrap</h2>
+          <h2>Nous serons ravis de discuter avec vous !</h2>
         </div>
       </div>
     </div>
@@ -52,19 +52,20 @@ Aina | Contact
           <div class="address">
             <i class="bi bi-geo-alt"></i>
             <h4>Localisation:</h4>
-            <p>Akwa, Douala, Cameroun.</p>
+            <p> BP 6469, 309 Rue Franqueville <br>
+              Immeuble AXA, Akwa, Douala, Cameroun.</p>
           </div>
 
           <div class="email">
             <i class="bi bi-envelope"></i>
             <h4>Email:</h4>
-            <p>worldwideweb-international-business.com</p>
+            <p> aina.redaction@yahoo.com</p>
           </div>
 
           <div class="phone">
             <i class="bi bi-phone"></i>
             <h4>Apler-nous:</h4>
-            <p>+237 5589 55488 55</p>
+            <p>+237 698 307 457</p>
           </div>
 
         </div>

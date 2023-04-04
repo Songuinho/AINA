@@ -3,7 +3,7 @@
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
-      <h1><a href="{{ route('home') }}"><span>AiNa</span></a></h1>
+      <h1><a href="{{ route('home') }}"><span style="font-family: Dancing Script Regular">AiNa</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
     </div>
@@ -14,7 +14,7 @@
         <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#">Rédaction</a></li>
-            <li><a href="#">Stratégie SEO</a></li>
+            <li><a href="#">Intégration</a></li>
             <li><a href="#">Traduction</a></li>
           </ul>
         </li>
@@ -52,7 +52,7 @@
         <li class="dropdown"><a class="active" href="#"><span id="person"><i class="bi bi-person fs-5"></i> Compte</span></a>
           <ul>
             <li><a href="{{ route('login') }}">Connexion</a></li>
-            <li><a href="S'inscrire">Inscription</a></li>
+            <li><a href="{{ route('register') }}">Inscription</a></li>
             <hr>
             <li><a href="{{ route('questions') }}">Aide pour <br>les clients </a></li>
             <li><a href="{{ route('questions') }}">Aide pour <br>les redacteurs</a></li>
@@ -63,7 +63,7 @@
         <li class="dropdown"><a href="#"><span id="person"><i class="bi bi-person fs-5"></i> Compte</span></a>
           <ul>
             <li><a href="{{ route('login') }}">Connexion</a></li>
-            <li><a href="S'inscrire">Inscription</a></li>
+            <li><a href="{{ route('register') }}">Inscription</a></li>
             <hr>
             <li><a href="{{ route('questions') }}">Aide pour <br>les clients </a></li>
             <li><a href="{{ route('questions') }}">Aide pour <br>les redacteurs</a></li>
