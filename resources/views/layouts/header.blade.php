@@ -2,8 +2,9 @@
 <header id="header" class="fixed-top d-flex align-items-center header-transparent">
   <div class="container d-flex align-items-center justify-content-between">
 
-    <div class="logo">
-      <h1><a href="{{ route('home') }}"><span style="font-family: Dancing Script Regular">AiNa</span></a></h1>
+    <div class="logo" style="margin-top: 1em;">
+      <h1><a href="{{ route('home') }}"><span >AiNa</span></a></h1>
+      <p class="text-white"><em>Les bons mots pour vous démarquer</em></p>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
     </div>
@@ -48,7 +49,7 @@
         </li>
         @endif
 
-        @if(($focus == 'login') || ($focus == 'register') || ($focus == 'faq'))
+        <!-- @if(($focus == 'login') || ($focus == 'register') || ($focus == 'faq'))
         <li class="dropdown"><a class="active" href="#"><span id="person"><i class="bi bi-person fs-5"></i> Compte</span></a>
           <ul>
             <li><a href="{{ route('login') }}">Connexion</a></li>
@@ -70,7 +71,7 @@
             <li><a href="{{ route('questions') }}">Comment passer <br> une commande</a></li>
           </ul>
         </li>
-        @endif
+        @endif -->
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->

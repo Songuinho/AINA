@@ -39,18 +39,20 @@ Aina | Commander des textes
 <!-- Section array prices -->
 <div class="container" style="margin-top: 3em;">
     <div class="row col-xm--3 col-sm-6 mr-5">
-        <h1 class="text-primary">Articles standards <h6>(Idéal pour les particuliers)</h6></h1>
+        <h1 class="text-primary">Articles standards <h6>(Idéal pour les particuliers)</h6>
+        </h1>
         <p>Ici, le redacteur web rédige les contenus pour un ou plusieur sites web</p>
         <div class="tb1">
             <table class="table">
                 <thead>Tableau récapitulatif du prix standard des mots</thead>
                 <tbody>
                     <tr>
+                        <!-- <th><a class="btn btn-primary" onclick="addText()">nouveau texte</a></th> -->
                         <th>Nombre de mot</th>
                         <th>Nombre d'article</th>
                         <th>Prix</th>
                     </tr>
-                    <tr>
+                    <tr id="AddContent">
                         <td>
                             <select id="nbr_mot">
                                 <option value="250">250 mots</option>
@@ -73,7 +75,8 @@ Aina | Commander des textes
     </div>
     <div class="row col-xm--3 col-sm-6 mr-5">
         <div class="mt-2">
-            <h1 class="text-primary">Artciles premium <h6>(Idéal pour les entreprises et particuliers)</h6></h1>
+            <h1 class="text-primary">Artciles premium <h6>(Idéal pour les entreprises et particuliers)</h6>
+            </h1>
             <div>
                 La rédaction prémium est une rédaction où la capacité à écrire des textes qui plaisent aux clients qu'aux moteur de recherche est l'arme ultime du rédacteur. Ici nos rédacteur ont des compétences avisées sur le façonnage des textes taillés aux exigences du réferencement naturel moderne. Pour ce style de texte, ils apportent aux clients des réponses conformes à leur besoin.
             </div>
@@ -114,14 +117,14 @@ Aina | Commander des textes
     <div class="container ">
 
         <div class="section-title" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>Nous contacter</p>
+            <h2 style="color: #353232;">Pour plus d'informations laissez nous un message </h2>
         </div>
 
 
         <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
 
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                @csrf
                 <div class="row">
 
                     <div class="col-md-6 form-group">
@@ -184,6 +187,13 @@ Aina | Commander des textes
         var prixTotal = (nbrArticle * (nbrMot * 0.2));
 
         document.getElementById('prix_total2').value = prixTotal.toFixed(2) + "€";
+    }
+
+    function addText() {
+        {
+            var dummy = document.getElementById('addContenu');
+            document.getElementById('contenu').innerHTML += dummy;
+        }
     }
 </script>
 

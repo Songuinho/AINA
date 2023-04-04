@@ -606,7 +606,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #1acc8d;
+  background: #1a5bcc;
   margin: 4px 10px;
 }
 
@@ -923,6 +923,7 @@ section {
 # Details
 --------------------------------------------------------------*/
 
+
 #redactor{
   margin-top: 4.5em;
 }
@@ -1083,7 +1084,8 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: #fbffff;
+  margin-top: -3em;
 }
 
 .team .member {
@@ -1102,7 +1104,7 @@ p{
 }
 
 .team p{
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .team .member img {
@@ -1250,6 +1252,10 @@ p{
 
 .pricing .btn-buy:hover {
   background: #149f6e;
+}
+
+.pricing{
+  margin-top: -4em;
 }
 
 /* .pricing .featured h3 {
@@ -1493,7 +1499,7 @@ p{
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #010351;
+  background: #020667;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1627,7 +1633,8 @@ p{
 }
 
 #footer .copyright {
-  border-top: 1px solid #010479;
+  margin-top: -2em;
+  border-top: 1px solid #babbd0;
   text-align: center;
   padding-top: 30px;
 }

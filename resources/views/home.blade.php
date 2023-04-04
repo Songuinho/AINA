@@ -17,10 +17,10 @@ Aina | Accueil
           <h2>Bénéficiez du professionnalisme de notre équipe, du savoir-faire et de leur expertise pour la rédaction de vos textes, rapidement et sans effort.</h2>
           <div class="d-flex">
             <div class="text-center text-lg-start flex-grow-1">
-              <a href="#" class="btn-get-started scrollto">Commander des textes</a>
+              <a href="{{ route('ordertext') }}" class="btn-get-started scrollto">Commander des textes</a>
             </div>
             <div class="text-center text-lg-start flex-grow-1">
-              <a href="#" class="btn-get-started scrollto bg-white text-success border border-success border-2 ">Demander un devis</a>
+              <a href="{{ route('orderquote') }}" class="btn-get-started scrollto bg-white text-success border border-success border-2 ">Demander un devis</a>
             </div>
           </div>
         </div>
@@ -62,7 +62,8 @@ Aina | Accueil
         <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
           <h3>Bénéficer des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque.
           </h3>
-          <p>Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, être à votre service afin de vous aider à atteindre vos objectifs ;  qu’ils soient d’aviser ou de convertir <p>
+          <p>Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, d'être à votre service afin de vous aider à atteindre vos objectifs ; qu’ils soient d’aviser ou de convertir
+          <p>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon"><svg class="svg-inline--fa fa-file-certificate fa-2xl pr-4" aria-hidden="true" width='30' focusable="false" data-prefix="fal" data-icon="file-certificate" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
@@ -73,13 +74,17 @@ Aina | Accueil
           </div>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon"><svg class="svg-inline--fa fa-head-side-brain fa-2xl pr-4" aria-hidden="true" width='30' focusable="false" data-prefix="fal" data-icon="head-side-brain" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M32 224C32 118 118 32 224 32h24c65.6 0 122.1 39.5 146.8 96.1c2.4 5.5 4.8 11.1 7.2 16.9l0 0c15.4 36.6 32.9 78 65.4 106.9l3.2 2.8c6 5.3 9.5 13 9.5 21.1c0 15.6-12.6 28.2-28.2 28.2H432c-8.8 0-16 7.2-16 16v64c0 17.7-14.3 32-32 32H304c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V448h64c35.3 0 64-28.7 64-64V336h3.8c33.2 0 60.2-26.9 60.2-60.2c0-17.2-7.4-33.6-20.2-45l-3.2-2.8c-26.7-23.7-41-57.5-56.8-94.6l0 0c-2.5-6-5.1-12-7.7-18.1C394.5 47.5 326.8 0 248 0H224C100.3 0 0 100.3 0 224c0 52.9 18.4 101.6 49.1 140C58.5 375.6 64 388.6 64 401.4V496c0 8.8 7.2 16 16 16s16-7.2 16-16V401.4c0-22.1-9.5-41.9-21.9-57.4C47.7 311.1 32 269.4 32 224zm171.1-99.8c4.1-7.3 12-12.2 20.9-12.2s16.8 4.9 20.9 12.2c4.3 7.6 13.9 10.4 21.6 6.2c2.8-1.5 6-2.4 9.5-2.4c7 0 13.2 3.6 16.8 9.1c3.4 5.2 9.5 8 15.7 7.1c1.1-.2 2.3-.3 3.5-.3c13.3 0 24 10.7 24 24s-10.7 24-24 24H268.7c-5.4 0-10.4 2.7-13.4 7.2s-3.4 10.2-1.3 15.2c1.3 2.9 2 6.2 2 9.6c0 11.6-8.2 21.3-19.2 23.5c-8.7 1.8-14.3 10.2-12.5 18.9s10.2 14.3 18.9 12.5c25.6-5.2 44.8-27.8 44.8-54.9h24c30.9 0 56-25.1 56-56c0-30.4-24.2-55.2-54.5-56c-9.5-9.9-22.8-16-37.5-16c-4 0-7.8 .4-11.5 1.3C254.3 86.6 239.9 80 224 80s-30.3 6.6-40.5 17.3C179.8 96.4 176 96 172 96c-22.2 0-41.1 13.9-48.6 33.4C98.6 135.1 80 157.4 80 184c0 19.2 9.7 36.1 24.3 46.2c3.1 28 26.8 49.8 55.7 49.8v24c0 8.8 7.2 16 16 16s16-7.2 16-16V260.7c0-5.4-2.7-10.4-7.2-13.4s-10.2-3.4-15.2-1.3c-2.9 1.3-6.2 2-9.6 2c-13.3 0-24-10.7-24-24c0-.7 0-1.3 .1-2c.6-6.8-3.3-13.3-9.6-16c-8.6-3.7-14.5-12.2-14.5-22c0-13.3 10.7-24 24-24l.2 0c8.2 0 15-6.1 15.9-14.2c1.1-10 9.6-17.8 19.9-17.8c3.5 0 6.7 .9 9.5 2.4c7.7 4.2 17.3 1.4 21.6-6.2z"></path></svg></div>
+            <div class="icon"><svg class="svg-inline--fa fa-head-side-brain fa-2xl pr-4" aria-hidden="true" width='30' focusable="false" data-prefix="fal" data-icon="head-side-brain" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                <path fill="currentColor" d="M32 224C32 118 118 32 224 32h24c65.6 0 122.1 39.5 146.8 96.1c2.4 5.5 4.8 11.1 7.2 16.9l0 0c15.4 36.6 32.9 78 65.4 106.9l3.2 2.8c6 5.3 9.5 13 9.5 21.1c0 15.6-12.6 28.2-28.2 28.2H432c-8.8 0-16 7.2-16 16v64c0 17.7-14.3 32-32 32H304c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V448h64c35.3 0 64-28.7 64-64V336h3.8c33.2 0 60.2-26.9 60.2-60.2c0-17.2-7.4-33.6-20.2-45l-3.2-2.8c-26.7-23.7-41-57.5-56.8-94.6l0 0c-2.5-6-5.1-12-7.7-18.1C394.5 47.5 326.8 0 248 0H224C100.3 0 0 100.3 0 224c0 52.9 18.4 101.6 49.1 140C58.5 375.6 64 388.6 64 401.4V496c0 8.8 7.2 16 16 16s16-7.2 16-16V401.4c0-22.1-9.5-41.9-21.9-57.4C47.7 311.1 32 269.4 32 224zm171.1-99.8c4.1-7.3 12-12.2 20.9-12.2s16.8 4.9 20.9 12.2c4.3 7.6 13.9 10.4 21.6 6.2c2.8-1.5 6-2.4 9.5-2.4c7 0 13.2 3.6 16.8 9.1c3.4 5.2 9.5 8 15.7 7.1c1.1-.2 2.3-.3 3.5-.3c13.3 0 24 10.7 24 24s-10.7 24-24 24H268.7c-5.4 0-10.4 2.7-13.4 7.2s-3.4 10.2-1.3 15.2c1.3 2.9 2 6.2 2 9.6c0 11.6-8.2 21.3-19.2 23.5c-8.7 1.8-14.3 10.2-12.5 18.9s10.2 14.3 18.9 12.5c25.6-5.2 44.8-27.8 44.8-54.9h24c30.9 0 56-25.1 56-56c0-30.4-24.2-55.2-54.5-56c-9.5-9.9-22.8-16-37.5-16c-4 0-7.8 .4-11.5 1.3C254.3 86.6 239.9 80 224 80s-30.3 6.6-40.5 17.3C179.8 96.4 176 96 172 96c-22.2 0-41.1 13.9-48.6 33.4C98.6 135.1 80 157.4 80 184c0 19.2 9.7 36.1 24.3 46.2c3.1 28 26.8 49.8 55.7 49.8v24c0 8.8 7.2 16 16 16s16-7.2 16-16V260.7c0-5.4-2.7-10.4-7.2-13.4s-10.2-3.4-15.2-1.3c-2.9 1.3-6.2 2-9.6 2c-13.3 0-24-10.7-24-24c0-.7 0-1.3 .1-2c.6-6.8-3.3-13.3-9.6-16c-8.6-3.7-14.5-12.2-14.5-22c0-13.3 10.7-24 24-24l.2 0c8.2 0 15-6.1 15.9-14.2c1.1-10 9.6-17.8 19.9-17.8c3.5 0 6.7 .9 9.5 2.4c7.7 4.2 17.3 1.4 21.6-6.2z"></path>
+              </svg></div>
             <h4 class="title"><a href="">Redaction 100% faite par des humains</a></h4>
             <p class="description">Chez AiNa, nous sommes convaincus que la qualité de nos contenus est primordiale pour offrir une expérience utilisateur optimale.</p>
           </div>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon"><svg class="svg-inline--fa fa-calendar-days fa-2xl pr-4" aria-hidden="true" width='30' focusable="false" data-prefix="fal" data-icon="calendar-days" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M112 0C120.8 0 128 7.164 128 16V64H320V16C320 7.164 327.2 0 336 0C344.8 0 352 7.164 352 16V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H96V16C96 7.164 103.2 0 112 0zM416 192H312V264H416V192zM416 296H312V376H416V296zM416 408H312V480H384C401.7 480 416 465.7 416 448V408zM280 376V296H168V376H280zM168 480H280V408H168V480zM136 376V296H32V376H136zM32 408V448C32 465.7 46.33 480 64 480H136V408H32zM32 264H136V192H32V264zM168 264H280V192H168V264zM384 96H64C46.33 96 32 110.3 32 128V160H416V128C416 110.3 401.7 96 384 96z"></path></svg></div>
+            <div class="icon"><svg class="svg-inline--fa fa-calendar-days fa-2xl pr-4" aria-hidden="true" width='30' focusable="false" data-prefix="fal" data-icon="calendar-days" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                <path fill="currentColor" d="M112 0C120.8 0 128 7.164 128 16V64H320V16C320 7.164 327.2 0 336 0C344.8 0 352 7.164 352 16V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H96V16C96 7.164 103.2 0 112 0zM416 192H312V264H416V192zM416 296H312V376H416V296zM416 408H312V480H384C401.7 480 416 465.7 416 448V408zM280 376V296H168V376H280zM168 480H280V408H168V480zM136 376V296H32V376H136zM32 408V448C32 465.7 46.33 480 64 480H136V408H32zM32 264H136V192H32V264zM168 264H280V192H168V264zM384 96H64C46.33 96 32 110.3 32 128V160H416V128C416 110.3 401.7 96 384 96z"></path>
+              </svg></div>
             <h4 class="title"><a href="">Livraison rapide</a></h4>
             <p class="description">Nous sommes fiers de proposer une livraison rapide pour tous nos produits.</p>
           </div>
@@ -91,66 +96,90 @@ Aina | Accueil
   </section><!-- End About Section -->
 
 
+  <!-- ======= Slide Section ======= -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="{{ asset('assets/img/gallery/target.svg') }}" class="testimonial-img" alt="">
+              <h3>Sollicitez l’expertise de nos experts et commander les textes sur mesure pour votre société.</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Bénéficer des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque. Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, être à votre service pour vous aider à atteindre vos objectifs ; qu’ils soient d’aviser ou de convertir.
+                Nous avons les professionnels capables de rédiger les textes pour tous secteurs d’activité
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="{{ asset('assets/img/gallery/search.svg') }}" class="testimonial-img" alt="">
+              <h3>Recevez des contenus SEO orientés pour les visiteurs</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Nos rédacteurs web utilisent les meilleures pratiques SEO pour permettre à vos textes d’apparaitrent en premier plan dans Google. Faites confiance à l’expertise de nos professionnels, ils sont capables de rédiger avec mots-clés et un balisage HTML les textes qui vont faciliter le crawl par les logiciels de recherche.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="{{ asset('assets/img/gallery/chrono.svg') }}" class="testimonial-img" alt="">
+              <h3>Notre directeur de projets dédié vous permet de gagner du temps.</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Notre équipe fait un traitement personnalisé de chacun de vos projets de rédaction web. Grace au professionnalisme de notre personnel nous pouvons superviser le bon déroulement de toutes les commandes de contenus et vous garantir une livraison dans les temps.
+                </i>
+              </p>
+              <div class="icon-box d-flex text-align-center">
+                <div class="icon flex-grow-1 " style="margin-right: -6em;"><img src="assets/img/gallery/team.png" width="50%" height="100%"></div>
+                <p class="flex-grow-1 col-6">
+                  Pricile et son personnel vérifient et controlent rigoureusement la qualité des textes avant de les faire livrer.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="{{ asset('assets/img/gallery/protection.svg') }}" class="testimonial-img" alt="">
+              <h3>Obtenez des textes rédigés à 100% par les humains et cela sans duplicate content.</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Sur Aina.com nous pouvons vous garantir que la rédaction est faite par les humains en un contenu unique et de qualité.
+                Les textes que vous nous proposez pour une rédaction sont documentés avec les dernières études publiées et actualitées. De plus ils sont rédigés par des rédacteurs qualifiés d’une façon minutieuse et selon vos consignes pour vous permettre d’atteindre vos objectifs.
+
+              </p>
+              <div class="icon-box d-flex text-align-center">
+                <div class="icon flex-grow-1" style="margin-right: 1em;"></div>
+                <p class="flex-grow-1">
+                  pour chaque livraison de texte, nous vous envoyons un rapport CopyScape afin de vous garantir un contenu original.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  </section><!-- End Slide Section -->
+
+
   <!-- ======= Details Section ======= -->
   <section id="details" class="details">
     <div class="container">
-
-      <div class="row content">
-        <div class="col-md-4" data-aos="fade-right">
-          <img src="assets/img/gallery/target.svg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-8 pt-4" data-aos="fade-up">
-          <h3>Sollicitez l’expertise de nos experts et commander les textes sur mesure pour votre société.</h3>
-          <p>
-            Bénéficer des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque.
-          </p>
-          <p>
-            Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, être à votre service pour vous aider à atteindre vos objectifs ; qu’ils soient d’aviser ou de convertir.
-          </p>
-          <ul>
-            <li><i class="bi bi-check"></i> Nous avons les professionnels capables de rédiger les textes pour tous secteurs d’activité </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row content">
-        <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-          <img src="assets/img/gallery/search.svg" class="img-fluid" alt="" style="margin-top: -2em;">
-        </div>
-        <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
-          <h3>Recevez des contenus SEO orientés pour les visiteurs</h3>
-          <p>
-            Nos rédacteurs web utilisent les meilleures pratiques SEO pour permettre à vos textes d’apparaissent en premier plan dans Google.
-          </p>
-          <p>
-            Faites confiance à l’expertise de nos experts, ils sont capables de rédiger avec mots-clés et un balisage HTML les textes qui vont faciliter le crawl par les logiciels de recherche.
-          </p>
-          <!-- <div class="icon-box d-flex text-align-center">
-            <div class="icon flex-grow-1" style="margin-right: 1em;"><img src="assets/img/gallery/seo.svg" width="80px" height="60px"></div>
-            <p class="flex-grow-1">
-              Vos textes sont livrés avec vos mots-clés et un balisage HTML facilitant le crawl par les
-              moteurs de recherche.
-            </p>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="row content">
-        <div class="col-md-4" data-aos="fade-right">
-          <img src="assets/img/gallery/chrono.svg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-8 pt-5" data-aos="fade-up">
-          <h3>Notre directeur de projets dédié vous permet de gagner du temps.</h3>
-          <p>Notre équipe fait un traitement personnalisé de chacun de vos projets de rédaction web.</p>
-          <p>Grace au professionnalisme de notre personnel nous pouvons superviser le bon déroulement de toutes les commandes de contenus et vous garantir une livraison dans les temps et ceux adapté à vos deadlines.</p>
-          <div class="icon-box d-flex text-align-center">
-            <div class="icon flex-grow-1" style="margin-right: 1em;"><img src="assets/img/gallery/team.png" width="100%" height="100%"></div>
-            <p class="flex-grow-1">
-              Pricile et son personnel vérifient et control rigoureusement la qualité des textes avant de les faire livrer.
-            </p>
-          </div>
-        </div>
-      </div>
 
       <div class="row content">
         <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
@@ -162,30 +191,12 @@ Aina | Accueil
             En fonction du volume des mots commandés vous avez l’avantage d’avoir les tarifs dégressifs. Cette réduction <b>s’applique immédiatement lors de la commande.</b>
           </p>
           <p>
-            Souhaitez-vous étayer vos besoins toute une année ? vous avez la possibilité de regrouper vos commandes ou d’opter pour les packs de crédits afin de profiter d’un meilleur tarif <b>jusqu'à -30%</b>.
+            Souhaitez-vous étayer vos besoins toute sur une année ? vous avez la possibilité de regrouper vos commandes ou d’opter pour les packs de crédits afin de profiter d’un meilleur tarif <b>jusqu'à -30%</b>.
           </p>
           <div class="icon-box d-flex text-align-center">
             <div class="icon flex-grow-1" style="margin-right: 1em;"><img src="assets/img/gallery/whatsap.svg" width="80px" height="60px"></div>
             <p class="flex-grow-1">
-              Contactez-nous au <span class="text-success">+237 698 307 457</span> du lundi à samedi de 9h à 18h afin de bénéficier d’un meilleur prix sur votre commande gros volume..
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row content">
-        <div class="col-md-4" data-aos="fade-right">
-          <img src="assets/img/gallery/protection.svg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-8 pt-5" data-aos="fade-up">
-          <h3>Obtenez des textes rédigés à 100% par les humains et cela sans duplicate content.</h3>
-          <p>Sur Aina.com nous pouvons vous garantir que la rédaction est faite par les humains en un contenu unique et de qualité.</p>
-          <p>
-            Les textes que vous nous proposez pour une rédaction sont documentés avec les dernières études publiées et actualitées. De plus ils sont rédigés par des rédacteurs qualifiés d’une façon minutieuse et selon vos consignes pour vous permettre d’atteindre vos objectifs. </p>
-          <div class="icon-box d-flex text-align-center">
-            <div class="icon flex-grow-1" style="margin-right: 1em;"><img src="assets/img/gallery/copyscape.svg" width="80px" height="60px"></div>
-            <p class="flex-grow-1">
-              pour chaque livraison de texte, nous vous envoyons un rapport CopyScape afin de vous garantir un contenu original.
+              Contactez-nous au <span class="text-success">+237 698 307 457</span> du lundi à samedi de 9h à 18h afin de bénéficier d’un meilleur prix sur votre commande.
             </p>
           </div>
         </div>
@@ -194,16 +205,73 @@ Aina | Accueil
     </div>
   </section><!-- End Details Section -->
 
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="row" data-aos="fade-left">
+        <div class="col-lg-4 col-md-6">
+          <div class="box" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/gallery/ecommerce.svg" width="50%" height="10%" alt="">
+            <p>Rédaction pour les TPE, PME, start-up puis en-dessous de ces mots</p>
+            <ul>
+              <li>Commander des articles de blog, des contenus marketing ou des rédaction de pages web.</li>
+              <li><b>Captivante et performante.</b></li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="{{ route('ordertext') }}" class="btn-buy">Commander des textes</a>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div class="box" data-aos="zoom-in" data-aos-delay="300">
+            <img src="assets/img/gallery/business.svg" width="50%" height="10%" alt="">
+            <p>Rédaction pour les sites <br> de e-commerce</p>
+            <ul>
+              <li>Commander des fiches de produits correspondantes et des textes optimisés </li>
+              <li><b>pour un référencement naturel.</b></li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="{{ route('ordertext') }}" class="btn-buy">Commander des textes</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+          <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
+            <img src="assets/img/gallery/agence.svg" width="49%" height="10%" alt="">
+            <p>Rédacteur pour  <br> les agences web.</p>
+            <ul>
+              <li>Respectez vos deadlines et livrez à vos clients des textes de qualité</li>
+              <li><b> adoptée à leur problématique.</b></li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="{{ route('orderquote') }}" class="btn-buy border border-2 bg-white text-success">Commander un devis</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row content justify-content-center">
+          <div class="col-md-8 pt-5" data-aos="fade-up">
+            <p style="text-align: center;">
+            <h2>Aina.com, la plateforme de <span class="text-primary">tous les contenus</span></h2>
+            Pour tous vos besoins dans le domaine de la rédaction dans votre entreprise le personnel de Aina.com vous assiste dans la création de tous vos contenus.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Pricing Section -->
 
   <!-- ======= Team Section ======= -->
   <section id="team" class="team">
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
-        <h2>Un personnel professionnel à votre service.</h2>
-        <p>
-          Située au Cameroun plus précisément dans la ville de Douala, notre personnel est à votre service pour la rédaction de vos contenus.
-        </p>
+        <h2 class="text-primary">Un personnel professionnel à votre service.</h2>
       </div>
 
       <div class="row" data-aos="fade-left">
@@ -272,17 +340,6 @@ Aina | Accueil
           </div>
         </div>
 
-        <div class="container d-flex justify-content-center" style="margin-top: 4em;">
-          <div class="d-flex" data-aos="zoom-out">
-            <div id="change-bg-1" class="text-center text-lg-start" style="margin-right: 1em;">
-              <a href="#" class="btn text-white border border-1 p-3  rounded-5">Commander des textes</a>
-            </div>
-            <div id="change-bg-2" class="text-center text-lg-start ">
-              <a href="#" class="btn border border-2 p-3 border-primary rounded-5" id="scrollto-2">Demander un devis</a>
-            </div>
-          </div>
-        </div>
-
         <div class="row content justify-content-center">
           <div class="col-md-8 pt-5" data-aos="fade-up">
             <p style="text-align: center;">
@@ -297,161 +354,8 @@ Aina | Accueil
   </section><!-- End Team Section -->
 
 
-  <!-- ======= Slide Section ======= -->
-  <section id="testimonials" class="testimonials">
-    <div class="container">
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="{{ asset('assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-                rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                risus at semper.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="{{ asset('assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
-                legam anim culpa.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="{{ asset('assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
-                duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="{{ asset('assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
-                minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore
-                labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="{{ asset('assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-    </div>
-
-  </section><!-- End Slide Section -->
-
-  <!-- ======= Pricing Section ======= -->
-  <section id="pricing" class="pricing">
-    <div class="container">
-
-
-      <div class="row content justify-content-center mb-5">
-        <div class="col-md-8 pt-5" data-aos="fade-up">
-          <p style="text-align: center;">
-          <h2>Aina.com, la plateforme de <span class="text-primary">tous les contenus</span></h2>
-          Pour tous vos besoins dans le domaine de la rédaction dans votre entreprise le personnel de Aina.com vous assiste dans la création de tous vos contenus.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="row justify-content-center" data-aos="fade-left">
-
-        <div class="col-lg-3 col-6">
-          <div class="box" data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/img/gallery/ecommerce.svg" alt="image/ecommerce" />
-
-            <p>Rédaction pour les TPE, PME, Start-up puis en dessous de ces mots </p>
-            <ul>
-              <li>commander des articles de blog, des contenus marketing ou des rédactions de page web. </li>
-              <li><b>Captivante et performante</b></li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Commander des textes</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-6 mt-4 mt-md-0">
-          <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
-            <img src="assets/img/gallery/business.svg" alt="...." />
-
-            <p>rédaction pour les sites <br> de e-commerce.</p>
-            <ul>
-              <li>commander les fiches de produits convaincantes et des textes optimisés pour référencement naturel par nos rédacteur SEO. </li>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Commander des textes</a>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-6 mt-4 mt-lg-0">
-          <div class="box" data-aos="zoom-in" data-aos-delay="300">
-            <img src="assets/img/gallery/agence.svg" alt="...." />
-
-            <p>rédacteur pour les agences web</p>
-            <ul>
-              <li>respectez vos deadlines et livrer à vos clients des textes de <br> <b>qualité adoptés à leur problématique.</b> </li>
-              <li class="text-white p-2">............</li>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy border nan">Commander un devis</a>
-              </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Pricing Section -->
-
   <!-- Section Redactor -->
-  <div class="details">
+  <div class="details mt-3 mb-5">
     <div class="container">
       <div class="row content">
         <div class="col-md-4" data-aos="fade-right">
@@ -465,7 +369,7 @@ Aina | Accueil
           <div class="container d-flex justify-content-center" style="margin-top: 4em;">
             <div class="d-flex" data-aos="zoom-out">
               <div id="change-bg-1" class="text-center text-lg-start" style="margin-top: -1em;">
-                <a href="#" class="btn text-white border border-1 p-3 rounded-5">Commander des textes</a>
+                <a href="{{ route('ordertext') }}" class="btn text-white border border-1 p-3 rounded-5">Commander des textes</a>
               </div>
             </div>
           </div>
@@ -477,72 +381,6 @@ Aina | Accueil
 
 </main><!-- End #main -->
 
-<!-- Section Contact -->
-<section id="contact" class="contact">
-  <div class="container">
-
-    <div class="section-title" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p>Nous contacter</p>
-    </div>
-
-    <div class="row">
-
-      <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-        <div class="info">
-          <div class="address">
-            <i class="bi bi-geo-alt"></i>
-            <h4>Localisation:</h4>
-            <p>Akwa, Douala, Cameroun.</p>
-          </div>
-
-          <div class="email">
-            <i class="bi bi-envelope"></i>
-            <h4>Email:</h4>
-            <p>worldwideweb-international-business.com</p>
-          </div>
-
-          <div class="phone">
-            <i class="bi bi-phone"></i>
-            <h4>Apler-nous:</h4>
-            <p>+237 5589 55488 55</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
-            </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Votre e-mail" required>
-            </div>
-          </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet du message" required>
-          </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Ecrire votre message ici..." required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Envoyer</button></div>
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Contact Section -->
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 <div id="preloader"></div>

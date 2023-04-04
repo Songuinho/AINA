@@ -2,12 +2,10 @@
 <footer id="footer">
   <div class="footer-top">
     <div class="container">
-      <div class="row">
-
+      <div class="row justify-content-around">
         <div class="col-lg-4 col-md-6">
-          <div class="footer-info">
-            <h3>AiNa</h3>
-            <p class="pb-3"><em>Les bons mots pour vous démarquer</em></p>
+          <div class=" pb-3 fs-3">AiNa</div>
+          <div class="footer-info text-start">
             <p>
               BP 6469, 309 Rue Franqueville <br>
               Immeuble AXA, Akwa, Douala<br><br>
@@ -23,13 +21,21 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Menu</h4>
+        <div class="col-lg-4 col-md-6 footer-newsletter" style="margin-top: 20px;">
+          <h4>Nos conseils</h4>
+          <p>Laissez votre E-mail</p>
+          <form action="" method="post">
+            <input type="email" name="email" placeholder=" aina.redaction@yahoo.com"><input type="submit" value="Subscribe">
+          </form>
+
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links text-start" style="margin-top: 20px;">
+          <h4>FAQ</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Accueil</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Domaine d'expertise</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Nous contacter</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('questions') }}">Aide pour les clients </a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('questions') }}">Aide pour les redacteur</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('questions') }}">Comment passer une commande</a></li>
           </ul>
         </div>
 
@@ -43,30 +49,13 @@
             <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
           </ul>
         </div> -->
-
-        <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Nos conseils</h4>
-          <p>Laissez votre E-mail</p>
-          <form action="" method="post">
-            <input type="email" name="email" placeholder=" aina.redaction@yahoo.com"><input type="submit" value="Subscribe">
-          </form>
-
-        </div>
-
       </div>
     </div>
   </div>
 
   <div class="container">
     <div class="copyright">
-      &copy; Copyright <strong><span>2BTECH</span></strong> année 2023-2024
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
-        Fait par <span class="text-info">Notre  équipe.</span>
+    <strong><span>AINA </span></strong>Copyright &copy; 2023-2024
     </div>
   </div>
 </footer><!-- End Footer -->
