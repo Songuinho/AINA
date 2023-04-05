@@ -11,11 +11,6 @@ Aina | Redaction
 
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                <div data-aos="zoom-out">
-                    <h2 class="text-white">Rédigez les contenus de qualités avec nos rédacteurs proféssionnels. </h2>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -23,13 +18,18 @@ Aina | Redaction
 
 <!-- Section redaction presentation -->
 <section class="ftco-section" data-aos="zoom-out" data-aos-delay="300">
+    <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+        <div data-aos="zoom-out">
+            <h2 style="margin-left: 3.5em;">Rédigez les contenus de qualités avec nos rédacteurs proféssionnels. </h2>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="featured-carousel owl-carousel">
                     <div class="item">
                         <div class="work-wrap d-md-flex">
-                            <div class="img order-md-last" style="background-image: url(carousel/images/work-1.jpg);"></div>
+                            <div class="img order-md-last" style="background-image: url(assets/img/aina_pictures/rédacteur6.jpg);"></div>
                             <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
                                 <div class="desc w-100">
                                     <div class="row justify-content-end">
@@ -37,9 +37,9 @@ Aina | Redaction
                                         <p>en bénéficiant de l'expertise de nos rédacteurs qualifiés.</p>
                                     </div>
                                 </div>
-                                <p>
+                                <p class="justify-content-center col-sm-4">
                                     <a href=" route('orderquote')}}" type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Commander un dévis</a>
-                                    <a href="{{ route('ordertext')}}" type="button" class="btn btn-dark mb-2 py-3 px-4">Commander des textes</a>
+                                    <a href="{{ route('ordertext')}}" type="button" class="btn btn-dark mb-2 py-3 px-4 ">Commander des textes</a>
                                 </p>
 
                             </div>
@@ -48,7 +48,7 @@ Aina | Redaction
 
                     <div class="item">
                         <div class="work-wrap d-md-flex">
-                            <div class="img order-md-last" style="background-image: url(carousel/images/work-2.jpg);"></div>
+                            <div class="img order-md-last" style="background-image: url(assets/img/aina_pictures/rédacteur2.webp);"></div>
                             <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
                                 <div class="desc w-100">
                                     <div class="row justify-content-center">
@@ -56,9 +56,9 @@ Aina | Redaction
                                         <p>Identifier vos consignes de rédaction et indiquer vos options(HTML, SEO et recherches). Sélectioner en quelques cliques sur notre formulaires de commande vos bésoins.</p>
                                     </div>
                                 </div>
-                                <p>
+                                <p class="justify-content-center col-sm-4">
                                     <a href=" route('orderquote')}}" type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Commander un dévis</a>
-                                    <a href="{{ route('ordertext')}}" type="button" class="btn btn-dark mb-2 py-3 px-4">Commander des textes</a>
+                                    <a href="{{ route('ordertext')}}" type="button" class="btn btn-dark mb-2 py-3 px-4 ">Commander des textes</a>
                                 </p>
 
                             </div>
@@ -67,7 +67,7 @@ Aina | Redaction
 
                     <div class="item">
                         <div class="work-wrap d-md-flex">
-                            <div class="img order-md-last" style="background-image: url(carousel/images/work-3.jpg);"></div>
+                            <div class="img order-md-last" style="background-image: url(assets/img/aina_pictures/rédacteur4.jpg);"></div>
                             <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
                                 <div class="desc w-100">
                                     <div class="row justify-content-center">
@@ -75,9 +75,9 @@ Aina | Redaction
                                         <p> Nos agences vous donne la possibilité de vérifier et de demander les ajustements si nécéssaire et ce de façon gratuite .</p>
                                     </div>
                                 </div>
-                                <p>
+                                <p class="justify-content-center col-sm-4">
                                     <a href=" route('orderquote')}}" type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Commander un dévis</a>
-                                    <a href="{{ route('ordertext')}}" type="button" class="btn btn-dark mb-2 py-3 px-4">Commander des textes</a>
+                                    <a href="{{ route('ordertext')}}" type="button" class="btn btn-dark mb-2 py-3 px-4 ">Commander des textes</a>
                                 </p>
 
                             </div>
@@ -86,7 +86,7 @@ Aina | Redaction
 
                     <div class="item">
                         <div class="work-wrap d-md-flex">
-                            <div class="img order-md-last" style="background-image: url(carousel/images/work-4.jpg);"></div>
+                            <div class="img order-md-last" style="background-image: url(assets/img/aina_pictures/rédacteur5.png);"></div>
                             <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
                                 <div class="desc w-100">
                                     <div class="row justify-content-center">
@@ -94,9 +94,9 @@ Aina | Redaction
                                         <p>Après toute rédaction, nous faisons des testes des contenus dans le logiciel CopyScape et par la suite on vous envoie le rapport anti-plagiat.</p>
                                     </div>
                                 </div>
-                                <p>
+                                <p class="justify-content-center col-sm-4">
                                     <a href=" route('orderquote')}}" type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Commander un dévis</a>
-                                    <a href="{{ route('ordertext')}}" type="button" class="btn btn-dark mb-2 py-3 px-4">Commander des textes</a>
+                                    <a href="{{ route('ordertext')}}" type="button" class="btn btn-dark mb-2 py-3 px-4 ">Commander des textes</a>
                                 </p>
                             </div>
                         </div>
@@ -110,12 +110,12 @@ Aina | Redaction
 <!-- End Section redaction presentation -->
 
 <!-- ======= Details Section ======= -->
-<section id="details" class="details" style="background-color: #fbfbf5; margin-top: 2em;">
+<section id="details" class="details" style="background-color: #fbfbf5; margin-top: 1em; margin-bottom: 5em;">
     <div class="container">
 
         <div class="row content">
-            <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-                <img src="assets/img/gallery/degressive.svg" class="img-fluid" alt="">
+            <div class="col-md-4 order-1 order-md-2 " id="redactor" data-aos="fade-left">
+                <img src="assets/img/aina_pictures/accueil.jpg" class="img-fluid rounded-3 animated" alt="" style=" height:350px; width: 400px;">
             </div>
             <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
                 <h3 style="color: gray;">Passez la commmande de votre premier texte dès maintenant.</h3>

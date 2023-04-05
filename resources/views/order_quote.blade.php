@@ -12,7 +12,7 @@ Aina | Commander un devis
         <div class="row justify-content-between">
             <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                 <div data-aos="zoom-out">
-                    <h2>We are team of talented designers making websites with Bootstrap</h2>
+                    <h2>Décrivez vos besoins (rédaction,intégration et tradcution), notre équipe reviendra rapidement vers vous pour vous accompagner dans votre projet.</h2>
                 </div>
             </div>
         </div>

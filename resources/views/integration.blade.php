@@ -6,101 +6,39 @@ Aina | Redaction
 
 
 @section('content')
-<section class="ftco-section" style="height: 500px;">
+<!--Section Hero -->
+<section id="integrateur">
+
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2 class="heading-section mb-5">Carousel #06</h2>
-            </div>
-            <div class="col-md-12">
-                <div class="featured-carousel owl-carousel">
-                    <div class="item">
-                        <div class="work-wrap d-md-flex">
-                            <div class="img order-md-last" style="background-image: url(carousel/images/work-1.jpg);"></div>
-                            <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
-                                <div class="desc w-100">
-                                    <h2 class="mb-4">Define <br> Your Budget</h2>
-                                    <p class="h5">Call: 0123 456 78901</p>
-                                    <p class="h5 mb-4">Email Address: email@info.com</p>
-                                    <div class="row justify-content-end">
-                                        <div class="col-xl-8">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="work-wrap d-md-flex">
-                            <div class="img order-md-last" style="background-image: url(carousel/images/work-2.jpg);"></div>
-                            <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
-                                <div class="py-md-5">
-                                    <h2 class="mb-4">Kids <br> Collection</h2>
-                                    <p class="h5">Call: 0123 456 78901</p>
-                                    <p class="h5 mb-4">Email Address: email@info.com</p>
-                                    <div class="row justify-content-end">
-                                        <div class="col-xl-8">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Shop the collection Outline</button>
-                                        <button type="button" class="btn btn-dark mb-2 py-3 px-4">Learn More</button>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="work-wrap d-md-flex">
-                            <div class="img order-md-last" style="background-image: url(carousel/images/work-3.jpg);"></div>
-                            <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
-                                <div class="py-md-5">
-                                    <h2 class="mb-4">Ladies <br> Collection</h2>
-                                    <p class="h5">Call: 0123 456 78901</p>
-                                    <p class="h5 mb-4">Email Address: email@info.com</p>
-                                    <div class="row justify-content-end">
-                                        <div class="col-xl-8">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Shop the collection Outline</button>
-                                        <button type="button" class="btn btn-dark mb-2 py-3 px-4">Learn More</button>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="work-wrap d-md-flex">
-                            <div class="img order-md-last" style="background-image: url(carousel/images/work-4.jpg);"></div>
-                            <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
-                                <div class="py-md-5">
-                                    <h2 class="mb-4">Ladies <br> Collection</h2>
-                                    <p class="h5">Call: 0123 456 78901</p>
-                                    <p class="h5 mb-4">Email Address: email@info.com</p>
-                                    <div class="row justify-content-end">
-                                        <div class="col-xl-8">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Shop the collection Outline</button>
-                                        <button type="button" class="btn btn-dark mb-2 py-3 px-4">Learn More</button>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+        <div class="row justify-content-between">
+            <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
             </div>
         </div>
     </div>
+
+</section><!-- End Hero -->
+
+<section id="faq" class="faq section-bg">
+    <div class="container" id="redactor">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>Externaliser l'intégration de vos contenus web</h2>
+        </div>
+
+        <div class="faq-list animated">
+            <ul>
+                <li data-aos="fade-up">
+                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1"></a>
+                    <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                        <p>
+                        Faire l'intégtration n'a toujours pas été facile pour bon nombre de personne par ce qu'elle necessite un sens aigu des détails et un savoir faire particulier. c'est la raison pour laquelle  nous avons à notre disposition du personnel capable de faire l'intégration de vos textes ou données sur CMS et ce façon minissieuse. 
+                        </p>
+                        <a href="{{route('orderquote')}}">Demander votre dévis</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
+
 @endsection

@@ -37,7 +37,7 @@ Aina | Commander des textes
 </section><!-- End Hero -->
 
 <!-- Section array prices -->
-<div class="container" style="margin-top: 3em;">
+<div class="container" style="margin-top: 3em;" data-aos="zoom-out">
     <div class="row col-xm--3 col-sm-6 mr-5">
         <h1 class="text-primary">Articles standards <h6>(Idéal pour les particuliers)</h6>
         </h1>
@@ -200,20 +200,13 @@ Aina | Commander des textes
     function calculpremium() {
 
         var nbrArticle = parseInt(document.getElementById('nbr_art2').value);
-
+        
 
         var nbrMot = parseInt(document.getElementById('nbr_mot2').value);
 
         var prixTotal = (nbrArticle * (nbrMot * 0.2));
 
         document.getElementById('prix_total2').value = prixTotal.toFixed(2) + "€";
-    }
-
-    function addText() {
-        {
-            var dummy = document.getElementById('addContenu');
-            document.getElementById('contenu').innerHTML += dummy;
-        }
     }
 </script>
 
