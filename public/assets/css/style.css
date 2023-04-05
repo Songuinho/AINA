@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Poppins, sans-serif;
   color: #444444;
 }
 
@@ -426,6 +426,7 @@ h6 {
   left: 0;
   right: 0;
 }
+
 
 #hero h1 {
   margin: 0 0 20px 0;
@@ -1652,7 +1653,7 @@ p{
   }
 }
 
-/* Adding code */
+/* Adding codes */
 
 #change-bg-1 a:hover {
   background-color: #0d90fc;
@@ -1669,4 +1670,21 @@ p{
 #change-bg-2 a:hover{
   color:#fff;
   background-color: #0d90fc;
+}
+
+#redacteur {
+  width: 100%;
+  background: url("../img/hero-bg.jpg");
+  position: relative;
+  padding: 120px 0 0 0;
+}
+
+#redacteur:before {
+  content: "";
+  background: #9b9ba2e8;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }

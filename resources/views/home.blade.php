@@ -106,11 +106,11 @@ Aina | Accueil
           <div class="swiper-slide">
             <div class="testimonial-item">
               <img src="{{ asset('assets/img/gallery/target.svg') }}" class="testimonial-img" alt="">
-              <h3>Sollicitez l’expertise de nos experts et commander les textes sur mesure pour votre société.</h3>
+              <h3>Sollicitez l’expertise de nos professionnels et commander les textes sur mesure pour votre société.</h3>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 Bénéficer des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque. Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, être à votre service pour vous aider à atteindre vos objectifs ; qu’ils soient d’aviser ou de convertir.
-                Nous avons les professionnels capables de rédiger les textes pour tous secteurs d’activité
+                Nous avons les professionnels capables de rédiger les textes pour tous secteurs d’activité.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -138,7 +138,7 @@ Aina | Accueil
                 </i>
               </p>
               <div class="icon-box d-flex text-align-center">
-                <div class="icon flex-grow-1 " style="margin-right: -6em;"><img src="assets/img/gallery/team.png" width="50%" height="100%"></div>
+                <div class="icon flex-grow-1 " style="margin-right: -4em;"><img src="assets/img/gallery/team.png" width="50%" height="100%"></div>
                 <p class="flex-grow-1 col-6">
                   Pricile et son personnel vérifient et controlent rigoureusement la qualité des textes avant de les faire livrer.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>

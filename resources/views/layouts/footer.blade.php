@@ -24,8 +24,14 @@
         <div class="col-lg-4 col-md-6 footer-newsletter" style="margin-top: 20px;">
           <h4>Nos conseils</h4>
           <p>Laissez votre E-mail</p>
-          <form action="" method="post">
-            <input type="email" name="email" placeholder=" aina.redaction@yahoo.com"><input type="submit" value="Subscribe">
+
+          <form action="{{ route('subscribe.mail') }}" method="post">
+            <input type="email" name="email" class=" @error('email') is-invalid @enderror" placeholder=" aina.redaction@yahoo.com"><input type="submit" value="Subscribe">
+            <span class="danger">
+              @error('email')
+              {{$message}}
+              @enderror
+            </span>
           </form>
 
         </div>
@@ -39,23 +45,13 @@
           </ul>
         </div>
 
-        <!-- <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-          </ul>
-        </div> -->
       </div>
     </div>
   </div>
 
   <div class="container">
     <div class="copyright">
-    <strong><span>AINA </span></strong>Copyright &copy; 2023-2024
+      <strong><span>AINA </span></strong>Copyright &copy; 2023-2024
     </div>
   </div>
 </footer><!-- End Footer -->

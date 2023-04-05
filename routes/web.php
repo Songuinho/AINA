@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,10 +33,26 @@ Route::get('/commander-un-devis',  function(){
     return view('order_quote');
 })->name('orderquote');
 
-Route::get('/Se-connecter',  function(){
-    return view('auth.login')->with(["focus" => " "]);
-})->name('login');
+Route::get('/redaction',  function(){
+    return view('redaction');
+})->name('redaction');
 
-Route::get('/Inscription',  function(){
-    return view('auth.register')->with(["focus" => " "]);
-})->name('register');
+Route::get('/integration',  function(){
+    return view('integration');
+})->name('integration');
+
+Route::get('/traduction',  function(){
+    return view('traduction');
+})->name('traduction');
+
+// Route::get('/Se-connecter',  function(){
+//     return view('auth.login')->with(["focus" => " "]);
+// })->name('login');
+
+// Route::get('/Inscription',  function(){
+//     return view('auth.register')->with(["focus" => " "]);
+// })->name('register');
+
+Route::post('/envoie-du-mail', [MailController::class , 'sendmail'])->name('send.mail');
+
+Route::post('/souscribtion', [MailController::class , 'subscribe'])->name('subscribe.mail');
