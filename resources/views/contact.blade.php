@@ -13,7 +13,7 @@ Aina | Contact
     <div class="row justify-content-between">
       <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
         <div data-aos="zoom-out">
-          <h2>Nous serons ravis de discuter avec vous !</h2>
+          <h2>Pour toutes préoccupations à propos de nos services ou de nos produits, bien vouloir nous contacter en remplissant le formulaire ci-dessous. <br> Notre réponse se fera dans les plus brefs delais. Vous pouvez aussi nous appeler pendant nos heures d'ouverture.</h2>
         </div>
       </div>
     </div>
@@ -74,40 +74,61 @@ Aina | Contact
 
       <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
+            <div class="text-success">
+                @if(session()->has("message"))
+                <div class="alert alert-success">{{session()->get('message')}}</div>
+                @endif
             </div>
 
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Votre e-mail" required>
-            </div>
-          </div>
+            <form action="{{ route('send.mail') }}" method="post" role="form">
+                @csrf
+                <div class="row">
 
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet du message" required>
-          </div>
+                    <div class="col-md-6 form-group">
+                        <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Votre nom" required>
+                        <span class="danger">
+                            @error('name')
+                            {{$message}}
+                            @enderror
+                        </span>
+                    </div>
 
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Ecrire votre message ici..." required></textarea>
-          </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Votre e-mail" required>
+                        <span class="danger">
+                            @error('email')
+                            {{$message}}
+                            @enderror
+                        </span>
+                    </div>
+                </div>
 
-          <div class="form-group mt-3">
-            <input type="file" class="form-control" name="file" id="subject" required>
-            <div class="small text-muted mt-2">Ajouter un fichier. Taille maximum 50 MB</div>
-          </div>
+                <div class="form-group mt-3">
+                    <input type="text" class="form-control @error('subject') is-invalid @enderror" name="subject" id="subject" placeholder="Objet du message" required>
+                    <span class="danger">
+                        @error('subject')
+                        {{$message}}
+                        @enderror
+                    </span>
+                </div>
 
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Envoyer</button></div>
-        </form>
+                <div class="form-group mt-3">
+                    <textarea class="form-control  @error('message') is-invalid @enderror" name="message" rows="5" placeholder="Ecrire votre message ici..." required></textarea>
+                    <span class="danger">
+                        @error('message')
+                        {{$message}}
+                        @enderror
+                    </span>
+                </div>
 
-      </div>
+                <div class="form-group mt-3">
+                    <input type="file" class="form-control" name="file" id="subject">
+                    <div class="small text-muted mt-2">Ajouter un fichier. Taille maximum 50 MB</div>
+                </div>
+                <div class="text-center" id="send"><button  type="submit">Envoyer</button></div>
+            </form>
+
+        </div>
 
     </div>
 

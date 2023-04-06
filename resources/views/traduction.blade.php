@@ -124,15 +124,18 @@ Aina | Redaction
         </div>
 
         <div class="row content">
-          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-            <img src="assets/img/aina_pictures/Traducteur.jpg" class="img-fluid" alt="">
+          <div class="col-md-4 order-1 order-md-2" id="redactor" data-aos="fade-left">
+            <img src="assets/img/aina_pictures/traduction.jpg" class="img-fluid animated rounded-3" alt="">
           </div>
           <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
             <h3>Solliciter notre expertise dans la traduction quel qu'en soit votre domaine de compétence</h3>
             <p>
               En choisissnat notre agence pour une commande de traduction, vous bénéfissiez du professionnalisme de notre personnel. Nos experts traducteurs ont la qualité de s'adapter dans la traduction dans tous secteurs d'activité professionnel.
             </p>
-            <a href="{{route('orderquote')}}" class="fst-italic">Passer votre commande</a>
+            <div class="d-flex" data-aos="zoom-out">
+              <div class="btn-wrap pricing mt-3" id="pricing" >
+              <a href="{{ route('orderquote') }}" class="btn-buy">Commander des textes</a>
+            </div>
           </div>
         </div>
     </div>

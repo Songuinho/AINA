@@ -40,8 +40,6 @@
           <h4>FAQ</h4>
           <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('questions') }}">Aide pour les clients </a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('questions') }}">Aide pour les redacteur</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('questions') }}">Comment passer une commande</a></li>
           </ul>
         </div>
 

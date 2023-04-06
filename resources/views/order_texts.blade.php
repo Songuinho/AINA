@@ -129,7 +129,7 @@ Aina | Commander des textes
                 @endif
             </div>
 
-            <form action="{{ route('send.mail') }}" method="post" role="form" class="php-email-form">
+            <form action="{{ route('send.mail') }}" method="post" role="form">
                 @csrf
                 <div class="row">
 
@@ -174,7 +174,7 @@ Aina | Commander des textes
                     <input type="file" class="form-control" name="file" id="subject">
                     <div class="small text-muted mt-2">Ajouter un fichier. Taille maximum 50 MB</div>
                 </div>
-                <div class="text-center"><button type="submit">Envoyer</button></div>
+                <div class="text-center" id="send"><button type="submit">Envoyer</button></div>
             </form>
 
         </div>
@@ -200,7 +200,7 @@ Aina | Commander des textes
     function calculpremium() {
 
         var nbrArticle = parseInt(document.getElementById('nbr_art2').value);
-        
+
 
         var nbrMot = parseInt(document.getElementById('nbr_mot2').value);
 

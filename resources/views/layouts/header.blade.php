@@ -4,7 +4,7 @@
 
     <div class="logo" style="margin-top: 1em;">
       <h1><a href="{{ route('home') }}"><span>AiNa</span></a></h1>
-      <p class="text-white"><em>Les bons mots pour vous démarquer</em></p>
+      <h6 class="text-white"><em><i>Les bons mots qui vous démarque...</i></em></h6>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
     </div>

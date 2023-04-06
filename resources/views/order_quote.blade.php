@@ -98,7 +98,7 @@ Aina | Commander un devis
                         <input type="file" class="form-control" name="file" id="subject">
                         <div class="small text-muted mt-2">Ajouter un fichier. Taille maximum 50 MB</div>
                     </div>
-                    <div class="text-center"><button type="submit">Envoyer</button></div>
+                    <button  class="text-center btn btn-success" type="submit">Envoyer</button>
                 </form>
 
             </div>

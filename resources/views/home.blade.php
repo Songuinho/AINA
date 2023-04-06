@@ -14,7 +14,7 @@ Aina | Accueil
       <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
         <div data-aos="zoom-out">
           <h1>Votre plateforme de rédaction <span>sur mesure</span></h1>
-          <h2>Bénéficiez du professionnalisme de notre équipe, du savoir-faire et de leur expertise pour la rédaction de vos textes, rapidement et sans effort.</h2>
+          <h2>Bénéficiez du professionnalisme, du savoir-faire et l'expertise de notre équipe pour la rédaction de vos textes, rapidement et sans effort.</h2>
           <div class="d-flex">
             <div class="text-center text-lg-start flex-grow-1">
               <a href="{{ route('ordertext') }}" class="btn-get-started scrollto">Commander des textes</a>
@@ -59,7 +59,7 @@ Aina | Accueil
         </div>
 
         <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-          <h3>Bénéficer des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque.
+          <h3>Profitez des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque.
           </h3>
           <p>Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, d'être à votre service afin de vous aider à atteindre vos objectifs ; qu’ils soient d’aviser ou de convertir
           <p>
@@ -209,9 +209,9 @@ Aina | Accueil
               <li>Commander des articles de blog, des contenus marketing ou des rédaction de pages web.</li>
               <li><b>Captivante et performante.</b></li>
             </ul>
-            <div class="btn-wrap">
-              <a href="{{ route('ordertext') }}" class="btn-buy">Commander des textes</a>
-            </div>
+              <div class="btn-wrap">
+                <a href="{{ route('ordertext') }}" class="btn-buy">Commander des textes</a>
+              </div>
           </div>
         </div>
        
@@ -220,7 +220,7 @@ Aina | Accueil
             <img src="assets/img/gallery/business.svg" width="50%" height="10%" alt="">
             <p>Rédaction pour les sites <br> de e-commerce</p>
             <ul>
-              <li>Commander des fiches de produits correspondantes <br> et des textes optimisés </li>
+              <li>Commander des fiches de produits correspondantes et des textes optimisés </li>
               <li><b>pour un référencement naturel.</b></li>
             </ul>
             <div class="btn-wrap">
@@ -266,15 +266,15 @@ Aina | Accueil
         <h2 class="text-primary">Un personnel professionnel à votre service.</h2>
       </div>
 
-      <div class="row" data-aos="fade-left">
+      <div class="row mt-5" data-aos="fade-left">
 
         <div class="col-lg-3 col-md-6">
           <div class="member" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pic"><img src="{{ asset('assets/img/team/team-1.jpg')}}" class="img-fluid" alt="">
+            <div class="pic">
             </div>
             <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+              <h4>Ondobo Okala Fabrice</h4>
+              <span>Rédacteur</span>
               <div class="social">
                 <a href=""><i class="bi bi-whatsapp"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -286,11 +286,11 @@ Aina | Accueil
 
         <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
           <div class="member" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pic"><img src="{{ asset('assets/img/team/team-2.jpg')}}" class="img-fluid" alt="">
+            <div class="pic">
             </div>
             <div class="member-info">
-              <h4>Mme Nana</h4>
-              <span>Directrice</span>
+              <h4>Tchounkeu Nana</h4>
+              <span>Chef de projet</span>
               <div class="social">
                 <a href=""><i class="bi bi-whatsapp"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -302,11 +302,11 @@ Aina | Accueil
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="member" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pic"><img src="{{ asset('assets/img/team/team-3.jpg')}}" class="img-fluid" alt="">
+            <div class="pic">
             </div>
             <div class="member-info">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
+              <h4>Lieukap Kamnang</h4>
+              <span>Intégrateur</span>
               <div class="social">
                 <a href=""><i class="bi bi-whatsapp"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -318,11 +318,11 @@ Aina | Accueil
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="member" data-aos="zoom-in" data-aos-delay="400">
-            <div class="pic"><img src="{{ asset('assets/img/team/team-4.jpg')}}" class="img-fluid" alt="">
+            <div class="pic">
             </div>
             <div class="member-info">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
+              <h4>Tsobgni Yann</h4>
+              <span>Rédacteur et Traducteur</span>
               <div class="social">
                 <a href=""><i class="bi bi-whatsapp"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -351,7 +351,7 @@ Aina | Accueil
     <div class="container">
       <div class="row content">
         <div class="col-md-4" id="redactor" data-aos="fade-right">
-          <img src="assets/img/about-img.png" class="img-fluid animated rounded-5" alt="">
+          <img src="assets/img/aina_pictures/redactrice.jpg" class="img-fluid animated rounded-5" alt="">
         </div>
         <div class="col-md-8" data-aos="fade-up" id="redactor">
           <h3>Faites votre première commande dans notre agence dès maintenant.</h3>
@@ -360,9 +360,9 @@ Aina | Accueil
           </p>
           <div class="container d-flex justify-content-center" style="margin-top: 4em;">
             <div class="d-flex" data-aos="zoom-out">
-              <div id="change-bg-1" class="text-center text-lg-start" style="margin-top: -1em;">
-                <a href="{{ route('ordertext') }}" class="btn text-white border border-1 p-3 rounded-5">Commander des textes</a>
-              </div>
+              <div class="btn-wrap pricing mt-3" id="pricing" >
+              <a href="{{ route('ordertext') }}" class="btn-buy">Commander des textes</a>
+            </div>
             </div>
           </div>
         </div>
