@@ -25,14 +25,22 @@
           <h4>Nos conseils</h4>
           <p>Laissez votre E-mail</p>
 
+          <div class="text-success">
+            @if(session()->has("message"))
+            <div class="alert alert-success">{{session()->get('message')}}</div>
+            @endif
+          </div>
+
           <form action="{{ route('subscribe.mail') }}" method="post">
+            @csrf
             <input type="email" name="email" class=" @error('email') is-invalid @enderror" placeholder=" aina.redaction@yahoo.com"><input type="submit" value="Subscribe">
-            <span class="danger">
-              @error('email')
-              {{$message}}
-              @enderror
-            </span>
           </form>
+          
+          <span class="text-danger">
+            @error('email')
+            {{$message}}
+            @enderror
+          </span>
 
         </div>
 

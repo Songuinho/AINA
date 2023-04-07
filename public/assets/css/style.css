@@ -1789,3 +1789,15 @@ p{
 .contact #send button[type=submit]:hover {
   background: #033f98;
 }
+
+#no-line {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 3em;
+}

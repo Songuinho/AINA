@@ -64,7 +64,7 @@ Aina | Contact
 
           <div class="phone">
             <i class="bi bi-phone"></i>
-            <h4>Apler-nous:</h4>
+            <h4>Appeler-nous:</h4>
             <p>+237 698 307 457</p>
           </div>
 
@@ -74,61 +74,61 @@ Aina | Contact
 
       <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
 
-            <div class="text-success">
-                @if(session()->has("message"))
-                <div class="alert alert-success">{{session()->get('message')}}</div>
-                @endif
+        <div class="text-success">
+          @if(session()->has("message"))
+          <div class="alert alert-success">{{session()->get('message')}}</div>
+          @endif
+        </div>
+
+        <form action="{{ route('send.mail') }}" method="post" role="form">
+          @csrf
+          <div class="row">
+
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" value="{{ old('name') }}" placeholder="Votre nom">
+              <span class="danger">
+                @error('name')
+                {{$message}}
+                @enderror
+              </span>
             </div>
 
-            <form action="{{ route('send.mail') }}" method="post" role="form">
-                @csrf
-                <div class="row">
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{ old('email') }}" placeholder="Votre e-mail">
+              <span class="danger">
+                @error('email')
+                {{$message}}
+                @enderror
+              </span>
+            </div>
+          </div>
 
-                    <div class="col-md-6 form-group">
-                        <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Votre nom" required>
-                        <span class="danger">
-                            @error('name')
-                            {{$message}}
-                            @enderror
-                        </span>
-                    </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control @error('subject') is-invalid @enderror" name="subject" id="subject" value="{{ old('subject') }}" placeholder="Objet du message">
+            <span class="danger">
+              @error('subject')
+              {{$message}}
+              @enderror
+            </span>
+          </div>
 
-                    <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Votre e-mail" required>
-                        <span class="danger">
-                            @error('email')
-                            {{$message}}
-                            @enderror
-                        </span>
-                    </div>
-                </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control  @error('message') is-invalid @enderror" name="message" rows="5" value="{{ old('message') }}" placeholder="Insérer votre message ici..."></textarea>
+            <span class="danger">
+              @error('message')
+              {{$message}}
+              @enderror
+            </span>
+          </div>
 
-                <div class="form-group mt-3">
-                    <input type="text" class="form-control @error('subject') is-invalid @enderror" name="subject" id="subject" placeholder="Objet du message" required>
-                    <span class="danger">
-                        @error('subject')
-                        {{$message}}
-                        @enderror
-                    </span>
-                </div>
+          <div class="form-group mt-3">
+            <input type="file" class="form-control" name="file" id="subject">
+            <div class="small text-muted mt-2">Ajouter un fichier. Taille maximum 50 MB</div>
+          </div>
+          <div class="text-center" id="send"><button type="submit">Envoyer</button></div>
+        </form>
 
-                <div class="form-group mt-3">
-                    <textarea class="form-control  @error('message') is-invalid @enderror" name="message" rows="5" placeholder="Ecrire votre message ici..." required></textarea>
-                    <span class="danger">
-                        @error('message')
-                        {{$message}}
-                        @enderror
-                    </span>
-                </div>
-
-                <div class="form-group mt-3">
-                    <input type="file" class="form-control" name="file" id="subject">
-                    <div class="small text-muted mt-2">Ajouter un fichier. Taille maximum 50 MB</div>
-                </div>
-                <div class="text-center" id="send"><button  type="submit">Envoyer</button></div>
-            </form>
-
-        </div>
+      </div>
 
     </div>
 

@@ -99,9 +99,9 @@
     transform: translateY(-50%);
     margin-top: 60px;
     color: rgba(0, 0, 0, 0.2) !important;
-    -webkit-transition: 0.7s;
-    -o-transition: 0.7s;
-    transition: 0.7s;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
     opacity: 1;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -165,7 +165,7 @@
     color: #9a4e44;
 }
 .owl-carousel .owl-nav .owl-prev {
-    left: 49%;
+    left: 46%;
     margin-left: -35px;
 }
 .owl-carousel .owl-nav .owl-next {
@@ -190,8 +190,8 @@
     outline: none !important;
 }
 .owl-carousel .owl-dots .owl-dot.active {
-    background: #ffc6be;
-    border: 1px solid #ffc6be;
+    background: #4056e7;
+    border: 1px solid #000000;
 }
 @media (min-width: 992px) {
     .owl-carousel .owl-dots {
@@ -236,7 +236,7 @@
 }
 
 .work-wrap .text {
-    background: #fff3f1;
+    background: #f5cbc3;
 }
 .work-wrap .text h2 {
     font-size: 30px;

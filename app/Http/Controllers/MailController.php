@@ -60,7 +60,7 @@ class MailController extends Controller
             }
         );
 
-        return back()->with($request->session()->flash("message", "Message envoye avec succes  !"));
+        return back()->with($request->session()->flash("message", "Méssage envoyé avec succès !"));
     }
 
     public function sending($msg)
@@ -78,12 +78,13 @@ class MailController extends Controller
             "email" => "required|email"
         ]);
 
+        $this->data =["mail" => $request->email];
+
         Mail::send("subscribe_mail", ["email" => $request->email], function ($msg) {
             $msg->to("ainaredaction02@gmail.com", "Espoir")
-                ->subject($this->data["subject"])
-                ->from("aina-@gmail.com", 'aina');
+                ->from($this->data["mail"], 'client');
         });
 
-        return back()->with($request->session()->flash("message", "Message envoye avec succes  !"));
+        return redirect()->back()->with($request->session()->flash("message", "Souscription effectuée avec succès !"));
     }
 }

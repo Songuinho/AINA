@@ -53,12 +53,12 @@ Aina | Commander un devis
                     @endif
                 </div>
 
-                <form action="{{ route('send.mail') }}" method="post" role="form" class="php-email-form">
+                <form action="{{ route('send.mail') }}" method="post" role="form">
                     @csrf
                     <div class="row">
 
                         <div class="col-md-6 form-group">
-                            <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Votre nom" required>
+                            <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" value="{{ old('name') }}" placeholder="Votre nom">
                             <span class="danger">
                                 @error('name')
                                 {{$message}}
@@ -67,7 +67,7 @@ Aina | Commander un devis
                         </div>
 
                         <div class="col-md-6 form-group mt-3 mt-md-0">
-                            <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Votre e-mail" required>
+                            <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{ old('email') }}" placeholder="Votre e-mail">
                             <span class="danger">
                                 @error('email')
                                 {{$message}}
@@ -77,7 +77,7 @@ Aina | Commander un devis
                     </div>
 
                     <div class="form-group mt-3">
-                        <input type="text" class="form-control @error('subject') is-invalid @enderror" name="subject" id="subject" placeholder="Objet du message" required>
+                        <input type="text" class="form-control @error('subject') is-invalid @enderror" name="subject" id="subject" value="{{ old('subject') }}" placeholder="Objet du message">
                         <span class="danger">
                             @error('subject')
                             {{$message}}
@@ -86,7 +86,7 @@ Aina | Commander un devis
                     </div>
 
                     <div class="form-group mt-3">
-                        <textarea class="form-control  @error('message') is-invalid @enderror" name="message" rows="5" placeholder="Ecrire votre message ici..." required></textarea>
+                        <textarea class="form-control  @error('message') is-invalid @enderror" name="message" rows="5" value="{{ old('message') }}" placeholder="Insérer votre message ici..."></textarea>
                         <span class="danger">
                             @error('message')
                             {{$message}}
@@ -98,7 +98,7 @@ Aina | Commander un devis
                         <input type="file" class="form-control" name="file" id="subject">
                         <div class="small text-muted mt-2">Ajouter un fichier. Taille maximum 50 MB</div>
                     </div>
-                    <button  class="text-center btn btn-success" type="submit">Envoyer</button>
+                    <div class="text-center" id="send"><button type="submit">Envoyer</button></div>
                 </form>
 
             </div>

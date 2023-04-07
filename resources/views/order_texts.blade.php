@@ -116,8 +116,8 @@ Aina | Commander des textes
 <section id="contact" class="contact">
     <div class="container ">
 
-        <div class="section-title" data-aos="fade-up">
-            <h2 style="color: #353232;">Pour plus d'informations laissez nous un message </h2>
+        <div data-aos="fade-up">
+            <h2 style="color: #353232;" id="no-line">Pour plus d'informations laissez nous un message.</h2>
         </div>
 
 
@@ -134,7 +134,7 @@ Aina | Commander des textes
                 <div class="row">
 
                     <div class="col-md-6 form-group">
-                        <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Votre nom" required>
+                        <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" value="{{ old('name') }}" placeholder="Votre nom">
                         <span class="danger">
                             @error('name')
                             {{$message}}
@@ -143,7 +143,7 @@ Aina | Commander des textes
                     </div>
 
                     <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Votre e-mail" required>
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{ old('email') }}" placeholder="Votre e-mail">
                         <span class="danger">
                             @error('email')
                             {{$message}}
@@ -153,7 +153,7 @@ Aina | Commander des textes
                 </div>
 
                 <div class="form-group mt-3">
-                    <input type="text" class="form-control @error('subject') is-invalid @enderror" name="subject" id="subject" placeholder="Objet du message" required>
+                    <input type="text" class="form-control @error('subject') is-invalid @enderror" name="subject" id="subject" value="{{ old('subject') }}" placeholder="Objet du message">
                     <span class="danger">
                         @error('subject')
                         {{$message}}
@@ -162,7 +162,7 @@ Aina | Commander des textes
                 </div>
 
                 <div class="form-group mt-3">
-                    <textarea class="form-control  @error('message') is-invalid @enderror" name="message" rows="5" placeholder="Ecrire votre message ici..." required></textarea>
+                    <textarea class="form-control  @error('message') is-invalid @enderror" name="message" rows="5" value="{{ old('message') }}" placeholder="Insérer votre message ici..."></textarea>
                     <span class="danger">
                         @error('message')
                         {{$message}}
