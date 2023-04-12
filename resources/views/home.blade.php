@@ -14,37 +14,22 @@ Aina | Accueil
       <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
         <div data-aos="zoom-out">
           <h1>Votre plateforme de rédaction <span>sur mesure</span></h1>
-          <h2>Bénéficiez du professionnalisme, du savoir-faire et l'expertise de notre équipe pour la rédaction de vos textes, rapidement et sans effort.</h2>
+          <h5 class="text-white">Bénéficiez du professionnalisme, du savoir-faire et l'expertise de notre équipe pour la rédaction de vos textes, rapidement et sans effort.</h5>
           <div class="d-flex">
-            <div class="text-center text-lg-start flex-grow-1">
+            <div class="text-center  text-lg-start flex-grow-1">
               <a href="{{ route('ordertext') }}" class="btn-get-started scrollto">Commander des textes</a>
             </div>
             <div class="text-center text-lg-start flex-grow-1">
-              <a href="{{ route('orderquote') }}" class="btn-get-started scrollto bg-white text-success border border-success border-2 ">Demander un devis</a>
+              <a href="{{ route('orderquote') }}" class="btn-get-started scrollto ">Demander un devis</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-        <img src="assets/img/aina_pictures/contact.jpg" class="img-fluid animated rounded-5" alt="">
+      <div class="col-lg-5 col-xs-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+        <img src="assets/img/aina_pictures/accueil.avif" class="img-fluid animated" alt="">
       </div>
     </div>
   </div>
-
-  <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-    <defs>
-      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-    </defs>
-    <g class="wave1">
-      <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-    </g>
-    <g class="wave2">
-      <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-    </g>
-    <g class="wave3">
-      <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-    </g>
-  </svg>
 
 </section><!-- End Hero -->
 
@@ -52,16 +37,24 @@ Aina | Accueil
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
+
+    <div class="row content justify-content-center">
+      <div class="col-lg-8 col-md-8 pt-5" style="text-align: center; margin-top: -2em;" data-aos="fade-up">
+        <p class="">
+        <h2>Aina.com, la plateforme de <span class="text-primary">tous les contenus</span></h2>
+        Pour tous vos besoins dans le domaine de la rédaction dans votre entreprise le personnel de Aina.com vous assiste dans la création de tous vos contenus.
+        </p>
+      </div>
+    </div>
+
+
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
-        </div>
-
-        <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-          <h3>Profitez des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque.
-          </h3>
-          <p>Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, d'être à votre service afin de vous aider à atteindre vos objectifs ; qu’ils soient d’aviser ou de convertir
+        <div class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+          <p>Profitez des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque.
+          </p>
+          <p>Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, d'être à votre service afin de vous aider à atteindre vos objectifs; qu’ils soient d’aviser ou de convertir.
           <p>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
@@ -89,84 +82,127 @@ Aina | Accueil
           </div>
 
         </div>
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+        </div>
       </div>
 
+    </div>
+
+    <div class="order-section">
+
+      <!-- Section Redactor -->
+      <div class="details mb-5">
+        <div class="container">
+          <div class="row content">
+            <div class="col-md-4 col-lg-6" data-aos="fade-right">
+              <img src="assets/img/aina_pictures/redactrice.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-8 col-lg-6" data-aos="fade-up" id="redactor">
+              <h3>Faites votre première commande dès maintenant.</h3>
+              <p>
+                Profitez de l’expérience de nos rédacteurs disponibles à recevoir rapidement des articles pour une rédaction authentique et sans plagiat.
+              </p>
+              <div class="container d-flex justify-content-center" style="margin-top: 1em;">
+                <div class="d-flex" data-aos="zoom-out">
+                  <div class="btn-wrap pricing mt-3" id="pricing">
+                    <a href="{{ route('ordertext') }}" class="btn-buy">Commander des textes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--End Section Redactor -->
     </div>
   </section><!-- End About Section -->
 
 
-  <!-- ======= Slide Section ======= -->
-  <section id="testimonials" class="testimonials">
-    <div class="container">
+  <!-- Carousel wrapper -->
+  <div id="carouselExampleCaptions" class="carousel slide bg-dark">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
 
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="{{ asset('assets/img/aina_pictures/cible.png') }}" class="testimonial-img" alt="">
-              <h3>Sollicitez l’expertise de nos professionnels et commander les textes sur mesure pour votre société.</h3>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Bénéficer des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque. Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, être à votre service pour vous aider à atteindre vos objectifs ; qu’ils soient d’aviser ou de convertir.
-                Nous avons les professionnels capables de rédiger les textes pour tous secteurs d’activité.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="{{ asset('assets/img/gallery/search.svg') }}" class="testimonial-img" alt="">
-              <h3>Recevez des contenus SEO orientés pour les visiteurs</h3>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Nos rédacteurs web utilisent les meilleures pratiques SEO pour permettre à vos textes d’apparaitrent en premier plan dans Google. Faites confiance à l’expertise de nos professionnels, ils sont capables de rédiger avec mots-clés et un balisage HTML les textes qui vont faciliter le crawl par les logiciels de recherche.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="{{ asset('assets/img/gallery/chrono.svg') }}" class="testimonial-img" alt="">
-              <h3>Notre directeur de projets dédié vous permet de gagner du temps.</h3>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Notre équipe fait un traitement personnalisé de chacun de vos projets de rédaction web. Grace au professionnalisme de notre personnel nous pouvons superviser le bon déroulement de toutes les commandes de contenus et vous garantir une livraison dans les temps.
-                </i>
-              </p>
-              <div class="icon-box d-flex text-align-center">
-                <p class="flex-grow-1 col-6">
-                  Pricile et son personnel vérifient et controlent rigoureusement la qualité des textes avant de les faire livrer.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-          </div><!-- End testimonial item -->
-
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="{{ asset('assets/img/gallery/protection.svg') }}" class="testimonial-img" alt="">
-              <h3>Obtenez des textes rédigés à 100% par les humains et cela sans duplicate content.</h3>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Sur Aina.com nous pouvons vous garantir que la rédaction est faite par les humains en un contenu unique et de qualité.
-                Les textes que vous nous proposez pour une rédaction sont documentés avec les dernières études publiées et actualitées. De plus ils sont rédigés par des rédacteurs qualifiés d’une façon minutieuse et selon vos consignes pour vous permettre d’atteindre vos objectifs.
-                pour chaque livraison de texte, nous vous envoyons un rapport CopyScape afin de vous garantir un contenu original.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
+      <div class="carousel-item active">
+        <img src="{{ asset('assets/img/aina_pictures/proredacteur.jpg') }}" height="600" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h3>Obtenez des textes rédigés à 100% par les humains et cela sans duplicate content.</h3>
+          <p>
+            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            Sur Aina.com nous pouvons vous garantir que la rédaction est faite par les humains en un contenu unique et de qualité.
+            Les textes que vous nous proposez pour une rédaction sont documentés avec les dernières études publiées et actualitées. De plus ils sont rédigés par des rédacteurs qualifiés d’une façon minutieuse et selon vos consignes pour vous permettre d’atteindre vos objectifs.
+            pour chaque livraison de texte, nous vous envoyons un rapport CopyScape afin de vous garantir un contenu original.
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+          </p>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
 
+      <div class="carousel-item">
+        <img src="{{ asset('assets/img/aina_pictures/sollicite_expertise.jpg') }}" height="600" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h3>Sollicitez l’expertise de nos professionnels et commander les textes sur mesure pour votre société.</h3>
+          <div class="bg-primary border p-4 rounded-pill text-white">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Bénéficer des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque. Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, être à votre service pour vous aider à atteindre vos objectifs ; qu’ils soient d’aviser ou de convertir.
+              Nous avons les professionnels capables de rédiger les textes pour tous secteurs d’activité.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{{ asset('assets/img/aina_pictures/seo.png') }}" height="600" class="d-block w-100" alt="assets/img/gallery/degressive.svg">
+        <div class="carousel-caption d-none d-md-block text-white">
+          <h3 class="text-dark">Recevez des contenus SEO orientés pour les visiteurs</h3>
+          <div class="bg-primary border p-4 rounded-pill">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Nos rédacteurs web utilisent les meilleures pratiques SEO pour permettre à vos textes d’apparaitrent en premier plan dans Google. Faites confiance à l’expertise de nos professionnels, ils sont capables de rédiger avec mots-clés et un balisage HTML les textes qui vont faciliter le crawl par les logiciels de recherche.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{{ asset('assets/img/aina_pictures/directrice.jpg') }}" height="600" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block  text-white">
+          <h3 class="text-dark">Notre directrice de projets dédiée vous permet de gagner du temps.</h3>
+          <div class="bg-primary p-2 border rounded-pill">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Notre équipe fait un traitement personnalisé de chacun de vos projets de rédaction web. Grace au professionnalisme de notre personnel nous pouvons superviser le bon déroulement de toutes les commandes de contenus et vous garantir une livraison dans les temps.
+              Notre équipe fait un traitement personnalisé de chacun de vos projets de rédaction web. Grace au professionnalisme de notre personnel nous pouvons superviser le bon déroulement de toute span les commandes de contenus et vous garantir une livraison dans les temps. <br>
+              Pricile et son personnel vérifient et controlent rigoureusement la qualité des textes avant de les faire livrer.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+          <div class="icon-box d-flex text-align-center">
+            <p class="flex-grow-1 col-6">
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-  </section><!-- End Slide Section -->
+  </div>
+  <!-- Carousel wrapper -->
 
 
   <!-- ======= Details Section ======= -->
@@ -197,179 +233,103 @@ Aina | Accueil
     </div>
   </section><!-- End Details Section -->
 
-  <!-- ======= Pricing Section ======= -->
-  <section id="pricing" class="pricing">
+  <!-- Section services -->
+  <section id="service" class="service" data-aos="fade-right">
     <div class="container">
-      <div class="row" data-aos="fade-left">
-        <div class="col-lg-4 col-md-6">
-          <div class="box" data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/img/gallery/ecommerce.svg" width="50%" height="10%" alt="">
-            <p>Rédaction pour les TPE, PME et start-up puis en-dessous</p>
-            <ul>
-              <li>Commander des articles de blog, des contenus marketing ou des rédaction de pages web.</li>
-              <li><b>Captivante et performante.</b></li>
-            </ul>
-              <div class="btn-wrap">
-                <a href="{{ route('ordertext') }}" class="btn-buy">Commander des textes</a>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h1 class="title mb-4">Nos Services</h1>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="zoom-out">
+          <div class="card service-wrapper rounded border-0 shadow p-4">
+            <div class="icon text-center text-custom h1 shadow rounded bg-white">
+              <span class="uim-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                  <rect width="20" height="15" x="2" y="3" class="uim-tertiary" rx="3"></rect>
+                  <path class="uim-primary" d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z"></path>
+                </svg></span>
+            </div>
+            <div class="content mt-4">
+              <h5 class="title">Rédaction</h5>
+              <p class="text-muted mt-3 mb-0">Rédigez les contenus de qualités avec nos rédacteurs proféssionnels.</p>
+              <div class="mt-3">
+                <a href="{{route('redaction')}}" class="text-custom fw-bold">Lire plus... <i class="mdi mdi-chevron-right"></i></a>
               </div>
-          </div>
-        </div>
-       
-        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-          <div class="box" data-aos="zoom-in" data-aos-delay="300">
-            <img src="assets/img/gallery/business.svg" width="50%" height="10%" alt="">
-            <p>Rédaction pour les sites <br> de e-commerce</p>
-            <ul>
-              <li>Commander des fiches de produits correspondantes et des textes optimisés </li>
-              <li><b>pour un référencement naturel.</b></li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="{{ route('ordertext') }}" class="btn-buy">Commander des textes</a>
+            </div>
+            <div class="big-icon h1 text-custom">
+              <span class="uim-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                  <rect width="20" height="15" x="2" y="3" class="uim-tertiary" rx="3"></rect>
+                  <path class="uim-primary" d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z"></path>
+                </svg></span>
             </div>
           </div>
-        </div>
+        </div><!--end col-->
 
-        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-          <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
-            <img src="assets/img/gallery/agence.svg" width="49%" height="10%" alt="">
-            <p>Rédacteur pour  <br> les agences web.</p>
-            <ul>
-              <li>Respectez vos deadlines et livrez à vos clients <br> des textes de qualité</li>
-              <li><b> adoptée à leur problématique.</b></li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="{{ route('orderquote') }}" class="btn-buy border border-2 bg-white text-success">Commander un devis</a>
+        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="zoom-out">
+          <div class="card service-wrapper rounded border-0 shadow p-4">
+            <div class="icon text-center text-custom h1 shadow rounded bg-white">
+              <span class="uim-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                  <path class="uim-tertiary" d="M20 11a.99018.99018 0 0 1-.71-.29 1.16044 1.16044 0 0 1-.21-.33008.94107.94107 0 0 1 0-.75976A1.02883 1.02883 0 0 1 19.29 9.29a1.04667 1.04667 0 0 1 1.41992 0 1.14718 1.14718 0 0 1 .21.33008.94107.94107 0 0 1 0 .75976 1.16044 1.16044 0 0 1-.21.33008A.99349.99349 0 0 1 20 11zM19 6.5a1.0032 1.0032 0 0 1 1-1h0a1.0032 1.0032 0 0 1 1 1h0a1.0032 1.0032 0 0 1-1 1h0A1.0032 1.0032 0 0 1 19 6.5zM20 4a.98979.98979 0 0 1-.91992-1.37988A1.02883 1.02883 0 0 1 19.29 2.29a1.04669 1.04669 0 0 1 1.41992 0 1.02883 1.02883 0 0 1 .21.33008A.98919.98919 0 0 1 20.71 3.71a1.16044 1.16044 0 0 1-.33008.21A.9994.9994 0 0 1 20 4zM7.03027 6.24023a.99364.99364 0 0 1 .7295-1.21h0a.9907.9907 0 0 1 1.21.7295h0a.99891.99891 0 0 1-.7295 1.21h0A.96451.96451 0 0 1 8 7H8A.99122.99122 0 0 1 7.03027 6.24023zm4-1a.99364.99364 0 0 1 .7295-1.21h0a.9907.9907 0 0 1 1.21.7295h0a.99891.99891 0 0 1-.7295 1.21h0A.96451.96451 0 0 1 12 6h0A1.00294 1.00294 0 0 1 11.03027 5.24023zm4-1a.99816.99816 0 0 1 .7295-1.21h0a1.00272 1.00272 0 0 1 1.21.7295h0a.99891.99891 0 0 1-.7295 1.21h0A.96451.96451 0 0 1 16 5h0A.99122.99122 0 0 1 15.03027 4.24023zM4 8A.99042.99042 0 0 1 3 7a.83154.83154 0 0 1 .08008-.37988A1.02883 1.02883 0 0 1 3.29 6.29 1.04669 1.04669 0 0 1 4.71 6.29a1.02883 1.02883 0 0 1 .21.33008A.99013.99013 0 0 1 4 8zM4 11a.99018.99018 0 0 1-.71-.29 1.16044 1.16044 0 0 1-.21-.33008.94107.94107 0 0 1 0-.75976A1.14718 1.14718 0 0 1 3.29 9.29 1.04667 1.04667 0 0 1 4.71 9.29a1.14718 1.14718 0 0 1 .21.33008.94107.94107 0 0 1 0 .75976 1.16044 1.16044 0 0 1-.21.33008A.99349.99349 0 0 1 4 11zM15 10a1.0032 1.0032 0 0 1 1-1h0a1.0032 1.0032 0 0 1 1 1h0a1.0032 1.0032 0 0 1-1 1h0A1.0032 1.0032 0 0 1 15 10zm-4 0a1.0032 1.0032 0 0 1 1-1h0a1.0032 1.0032 0 0 1 1 1h0a1.0032 1.0032 0 0 1-1 1h0A1.0032 1.0032 0 0 1 11 10zM7 10A1.0032 1.0032 0 0 1 8 9H8a1.0032 1.0032 0 0 1 1 1H9a1.0032 1.0032 0 0 1-1 1H8A1.0032 1.0032 0 0 1 7 10z"></path>
+                  <polygon class="uim-primary" points="20 14 20 21 4 17 4 14 20 14"></polygon>
+                  <path class="uim-primary" d="M20,22a.97427.97427,0,0,1-.24219-.03027l-16-4A.99961.99961,0,0,1,3,17V14a.99943.99943,0,0,1,1-1H20a.99943.99943,0,0,1,1,1v7a1.0005,1.0005,0,0,1-1,1ZM5,16.21875l14,3.5V15H5Z"></path>
+                </svg></span>
+            </div>
+            <div class="content mt-4">
+              <h5 class="title">Traduction</h5>
+              <p class="text-muted mt-3 mb-0">Sollicitez les services de notre <br> agence de traduction.</p>
+              <div class="mt-3">
+                <a href="{{route('integration')}}" class="text-custom fw-bold">Lire plus...<i class="mdi mdi-chevron-right"></i></a>
+              </div>
+            </div>
+
+            <div class="big-icon h1 text-custom">
+              <span class="uim-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                  <path class="uim-tertiary" d="M20 11a.99018.99018 0 0 1-.71-.29 1.16044 1.16044 0 0 1-.21-.33008.94107.94107 0 0 1 0-.75976A1.02883 1.02883 0 0 1 19.29 9.29a1.04667 1.04667 0 0 1 1.41992 0 1.14718 1.14718 0 0 1 .21.33008.94107.94107 0 0 1 0 .75976 1.16044 1.16044 0 0 1-.21.33008A.99349.99349 0 0 1 20 11zM19 6.5a1.0032 1.0032 0 0 1 1-1h0a1.0032 1.0032 0 0 1 1 1h0a1.0032 1.0032 0 0 1-1 1h0A1.0032 1.0032 0 0 1 19 6.5zM20 4a.98979.98979 0 0 1-.91992-1.37988A1.02883 1.02883 0 0 1 19.29 2.29a1.04669 1.04669 0 0 1 1.41992 0 1.02883 1.02883 0 0 1 .21.33008A.98919.98919 0 0 1 20.71 3.71a1.16044 1.16044 0 0 1-.33008.21A.9994.9994 0 0 1 20 4zM7.03027 6.24023a.99364.99364 0 0 1 .7295-1.21h0a.9907.9907 0 0 1 1.21.7295h0a.99891.99891 0 0 1-.7295 1.21h0A.96451.96451 0 0 1 8 7H8A.99122.99122 0 0 1 7.03027 6.24023zm4-1a.99364.99364 0 0 1 .7295-1.21h0a.9907.9907 0 0 1 1.21.7295h0a.99891.99891 0 0 1-.7295 1.21h0A.96451.96451 0 0 1 12 6h0A1.00294 1.00294 0 0 1 11.03027 5.24023zm4-1a.99816.99816 0 0 1 .7295-1.21h0a1.00272 1.00272 0 0 1 1.21.7295h0a.99891.99891 0 0 1-.7295 1.21h0A.96451.96451 0 0 1 16 5h0A.99122.99122 0 0 1 15.03027 4.24023zM4 8A.99042.99042 0 0 1 3 7a.83154.83154 0 0 1 .08008-.37988A1.02883 1.02883 0 0 1 3.29 6.29 1.04669 1.04669 0 0 1 4.71 6.29a1.02883 1.02883 0 0 1 .21.33008A.99013.99013 0 0 1 4 8zM4 11a.99018.99018 0 0 1-.71-.29 1.16044 1.16044 0 0 1-.21-.33008.94107.94107 0 0 1 0-.75976A1.14718 1.14718 0 0 1 3.29 9.29 1.04667 1.04667 0 0 1 4.71 9.29a1.14718 1.14718 0 0 1 .21.33008.94107.94107 0 0 1 0 .75976 1.16044 1.16044 0 0 1-.21.33008A.99349.99349 0 0 1 4 11zM15 10a1.0032 1.0032 0 0 1 1-1h0a1.0032 1.0032 0 0 1 1 1h0a1.0032 1.0032 0 0 1-1 1h0A1.0032 1.0032 0 0 1 15 10zm-4 0a1.0032 1.0032 0 0 1 1-1h0a1.0032 1.0032 0 0 1 1 1h0a1.0032 1.0032 0 0 1-1 1h0A1.0032 1.0032 0 0 1 11 10zM7 10A1.0032 1.0032 0 0 1 8 9H8a1.0032 1.0032 0 0 1 1 1H9a1.0032 1.0032 0 0 1-1 1H8A1.0032 1.0032 0 0 1 7 10z"></path>
+                  <polygon class="uim-primary" points="20 14 20 21 4 17 4 14 20 14"></polygon>
+                  <path class="uim-primary" d="M20,22a.97427.97427,0,0,1-.24219-.03027l-16-4A.99961.99961,0,0,1,3,17V14a.99943.99943,0,0,1,1-1H20a.99943.99943,0,0,1,1,1v7a1.0005,1.0005,0,0,1-1,1ZM5,16.21875l14,3.5V15H5Z"></path>
+                </svg></span>
             </div>
           </div>
-        </div>
+        </div><!--end col-->
 
-
-        <div class="row content justify-content-center">
-          <div class="col-md-8 pt-5" data-aos="fade-up">
-            <p style="text-align: center;">
-            <h2>Aina.com, la plateforme de <span class="text-primary">tous les contenus</span></h2>
-            Pour tous vos besoins dans le domaine de la rédaction dans votre entreprise le personnel de Aina.com vous assiste dans la création de tous vos contenus.
-            </p>
+        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="zoom-out">
+          <div class="card service-wrapper rounded border-0 shadow p-4">
+            <div class="icon text-center text-custom h1 shadow rounded bg-white">
+              <span class="uim-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                  <path class="uim-quaternary" d="M12,22a.99974.99974,0,0,1-1-1V3a1,1,0,0,1,2,0V21A.99974.99974,0,0,1,12,22Z"></path>
+                  <polygon class="uim-primary" points="21 12 16 7 16 17 21 12"></polygon>
+                  <path class="uim-primary" d="M16,18a1,1,0,0,1-1-1V7a.99991.99991,0,0,1,1.707-.707l5,5a.99962.99962,0,0,1,0,1.41406l-5,5A.99893.99893,0,0,1,16,18Zm1-8.58594v5.17188L19.58594,12Z"></path>
+                  <path class="uim-tertiary" d="M3 13a.99075.99075 0 0 1-.92041-1.37988A1.14883 1.14883 0 0 1 2.29 11.29a1.04669 1.04669 0 0 1 1.41992 0 1.03724 1.03724 0 0 1 .21.33008A.83792.83792 0 0 1 4 12a.99042.99042 0 0 1-1 1zM4.79 15.21a1.00761 1.00761 0 0 1 0-1.41992h0a1.00671 1.00671 0 0 1 1.41992 0h0a1.0085 1.0085 0 0 1 0 1.41992h0a1.02749 1.02749 0 0 1-.71.29h0A1.02577 1.02577 0 0 1 4.79 15.21zM8 18a.99183.99183 0 0 1-.71-.29 1.16213 1.16213 0 0 1-.21045-.33008A.99906.99906 0 0 1 7 17a1.05 1.05 0 0 1 .29-.71 1.0387 1.0387 0 0 1 1.08984-.21 1.15384 1.15384 0 0 1 .33008.21A1.05232 1.05232 0 0 1 9 17a.9994.9994 0 0 1-.08008.37988 1.17124 1.17124 0 0 1-.21.33008A.99183.99183 0 0 1 8 18zM7 13.66992a.996.996 0 0 1 1-1H8a.99632.99632 0 0 1 1 1H9a1.00319 1.00319 0 0 1-1 1H8A1.00288 1.00288 0 0 1 7 13.66992zm0-3.33984a1.00288 1.00288 0 0 1 1-1H8a1.00319 1.00319 0 0 1 1 1H9a.99693.99693 0 0 1-1 1H8A.99663.99663 0 0 1 7 10.33008zM8 8a.99075.99075 0 0 1-.92041-1.37988A1.03011 1.03011 0 0 1 7.29 6.29a.98544.98544 0 0 1 1.62988.33008A.99013.99013 0 0 1 8 8zM4.79 10.21A1.00761 1.00761 0 0 1 4.79 8.79h0A1.00671 1.00671 0 0 1 6.21 8.79h0a1.0085 1.0085 0 0 1 0 1.41992h0a1.02749 1.02749 0 0 1-.71.29h0A1.02577 1.02577 0 0 1 4.79 10.21z"></path>
+                </svg></span>
+            </div>
+            <div class="content mt-4">
+              <h5 class="title">Intégration</h5>
+              <p class="text-muted mt-3 mb-0">Externaliser L'intégrité <br> de vos contenus web.</p>
+              <div class="mt-3">
+                <a href="{{route('traduction')}}" class="text-custom fw-bold">Lire plus...<i class="mdi mdi-chevron-right"></i></a>
+              </div>
+            </div>
+            <div class="big-icon h1 text-custom">
+              <span class="uim-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                  <path class="uim-quaternary" d="M12,22a.99974.99974,0,0,1-1-1V3a1,1,0,0,1,2,0V21A.99974.99974,0,0,1,12,22Z"></path>
+                  <polygon class="uim-primary" points="21 12 16 7 16 17 21 12"></polygon>
+                  <path class="uim-primary" d="M16,18a1,1,0,0,1-1-1V7a.99991.99991,0,0,1,1.707-.707l5,5a.99962.99962,0,0,1,0,1.41406l-5,5A.99893.99893,0,0,1,16,18Zm1-8.58594v5.17188L19.58594,12Z"></path>
+                  <path class="uim-tertiary" d="M3 13a.99075.99075 0 0 1-.92041-1.37988A1.14883 1.14883 0 0 1 2.29 11.29a1.04669 1.04669 0 0 1 1.41992 0 1.03724 1.03724 0 0 1 .21.33008A.83792.83792 0 0 1 4 12a.99042.99042 0 0 1-1 1zM4.79 15.21a1.00761 1.00761 0 0 1 0-1.41992h0a1.00671 1.00671 0 0 1 1.41992 0h0a1.0085 1.0085 0 0 1 0 1.41992h0a1.02749 1.02749 0 0 1-.71.29h0A1.02577 1.02577 0 0 1 4.79 15.21zM8 18a.99183.99183 0 0 1-.71-.29 1.16213 1.16213 0 0 1-.21045-.33008A.99906.99906 0 0 1 7 17a1.05 1.05 0 0 1 .29-.71 1.0387 1.0387 0 0 1 1.08984-.21 1.15384 1.15384 0 0 1 .33008.21A1.05232 1.05232 0 0 1 9 17a.9994.9994 0 0 1-.08008.37988 1.17124 1.17124 0 0 1-.21.33008A.99183.99183 0 0 1 8 18zM7 13.66992a.996.996 0 0 1 1-1H8a.99632.99632 0 0 1 1 1H9a1.00319 1.00319 0 0 1-1 1H8A1.00288 1.00288 0 0 1 7 13.66992zm0-3.33984a1.00288 1.00288 0 0 1 1-1H8a1.00319 1.00319 0 0 1 1 1H9a.99693.99693 0 0 1-1 1H8A.99663.99663 0 0 1 7 10.33008zM8 8a.99075.99075 0 0 1-.92041-1.37988A1.03011 1.03011 0 0 1 7.29 6.29a.98544.98544 0 0 1 1.62988.33008A.99013.99013 0 0 1 8 8zM4.79 10.21A1.00761 1.00761 0 0 1 4.79 8.79h0A1.00671 1.00671 0 0 1 6.21 8.79h0a1.0085 1.0085 0 0 1 0 1.41992h0a1.02749 1.02749 0 0 1-.71.29h0A1.02577 1.02577 0 0 1 4.79 10.21z"></path>
+                </svg></span>
+            </div>
           </div>
-        </div>
+        </div><!--end col-->
 
-      </div>
 
+      </div><!--end row-->
     </div>
-  </section><!-- End Pricing Section -->
+  </section>
 
-  <!-- ======= Team Section ======= -->
-  <section id="team" class="team">
-    <div class="container">
-
-      <div class="section-title" data-aos="fade-up">
-        <h2 class="text-primary">Un personnel professionnel à votre service.</h2>
-      </div>
-
-      <div class="row mt-5" data-aos="fade-left">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pic">
-            </div>
-            <div class="member-info">
-              <h4>Ondobo Okala Fabrice</h4>
-              <span>Rédacteur</span>
-              <div class="social">
-                <a href=""><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-          <div class="member" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pic">
-            </div>
-            <div class="member-info">
-              <h4>Tchounkeu Nana</h4>
-              <span>Chef de projet</span>
-              <div class="social">
-                <a href=""><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="member" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pic">
-            </div>
-            <div class="member-info">
-              <h4>Lieukap Kamnang</h4>
-              <span>Intégrateur</span>
-              <div class="social">
-                <a href=""><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="member" data-aos="zoom-in" data-aos-delay="400">
-            <div class="pic">
-            </div>
-            <div class="member-info">
-              <h4>Tsobgni Yann</h4>
-              <span>Rédacteur et Traducteur</span>
-              <div class="social">
-                <a href=""><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row content justify-content-center">
-          <div class="col-md-8 pt-5" data-aos="fade-up">
-            <p style="text-align: center;">
-              L’association de talent et rapidité font de notre équipe des professionnels de la rédaction. Grace à ses deux qualités, nous vous garantissons un travail bien fait et ceux dans les brefs délais. </p>
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Team Section -->
-
-
-  <!-- Section Redactor -->
-  <div class="details mt-3 mb-5">
-    <div class="container">
-      <div class="row content">
-        <div class="col-md-4" id="redactor" data-aos="fade-right">
-          <img src="assets/img/aina_pictures/redactrice.jpg" class="img-fluid animated rounded-5" alt="">
-        </div>
-        <div class="col-md-8" data-aos="fade-up" id="redactor">
-          <h3>Faites votre première commande dans notre agence dès maintenant.</h3>
-          <p>
-            Profitez de l’expérience de nos rédacteurs disponibles à recevoir rapidement des articles pour une rédaction authentique et sans plagiat.
-          </p>
-          <div class="container d-flex justify-content-center" style="margin-top: 4em;">
-            <div class="d-flex" data-aos="zoom-out">
-              <div class="btn-wrap pricing mt-3" id="pricing" >
-              <a href="{{ route('ordertext') }}" class="btn-buy">Commander des textes</a>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!--End Section Redactor -->
-
+  <!-- End section services -->
 
 </main><!-- End #main -->
 

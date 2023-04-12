@@ -45,6 +45,14 @@ Route::get('/traduction',  function(){
     return view('traduction');
 })->name('traduction');
 
+Route::get('/a-propos-de-nous',  function(){
+    return view('about-us');
+})->name('about-us');
+
+Route::get('/tarif-et-formule',  function(){
+    return view('tarif-formulaire');
+})->name('tarif');
+
 // Route::get('/Se-connecter',  function(){
 //     return view('auth.login')->with(["focus" => " "]);
 // })->name('login');
@@ -53,6 +61,6 @@ Route::get('/traduction',  function(){
 //     return view('auth.register')->with(["focus" => " "]);
 // })->name('register');
 
-Route::post('/envoie-du-mail', [MailController::class , 'sendmail'])->name('send.mail');
+Route::post('/envoiedumail', [MailController::class , 'sendmail'])->name('send.mail');
 
 Route::post('/souscribtion', [MailController::class , 'subscribe'])->name('subscribe.mail');

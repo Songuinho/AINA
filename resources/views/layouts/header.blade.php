@@ -3,25 +3,25 @@
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo" style="margin-top: 1em;">
-      <h1><a href="{{ route('home') }}"><span>AiNa</span></a></h1>
-      <h6 class="text-white"><span><i>Les bons mots qui vous démarque...</i></span></h6>
+      <h1 class="text-dark"><a href="{{ route('home') }}"><span class="text-dark">AiNa</span></a></h1>
+      <h6 class="text-dark"><span><i>Les bons mots qui vous démarquent...</i></span></h6>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
     </div>
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto {{ $focus == 'home'? 'active' : ' ' }}" href="{{ route('home') }}">Accueil</a></li>
+        <li><a class="nav-link scrollto text-dark {{ $focus == 'home'? 'active' : ' ' }}" href="{{ route('home') }}">Accueil</a></li>
         @if(($focus == 'redaction') || ($focus == 'integration') || ($focus == 'traduction'))
-        <li class="dropdown"><a href="#" class="active"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+        <li class="dropdown"><a href="#" class="active"><span class="text-dark">Services</span> <i class="bi bi-chevron-down text-dark"></i></a>
           <ul>
             <li><a href="{{ route('redaction') }}">Rédaction</a></li>
-            <li><a href="{{ route('integration') }}">Intégration</a></li>
             <li><a href="{{ route('traduction') }}">Traduction</a></li>
+            <li><a href="{{ route('integration') }}">Intégration</a></li>
           </ul>
         </li>
         @else
-        <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+        <li class="dropdown"><a href="#"><span class="text-dark">Services</span> <i class="bi bi-chevron-down text-dark"></i></a>
           <ul>
             <li><a href="{{ route('redaction') }}">Rédaction</a></li>
             <li><a href="{{ route('integration') }}">Intégration</a></li>
@@ -30,7 +30,7 @@
         </li>
         @endif
 
-        <li class="dropdown"><a href="#"><span>Domaine d'expertise</span> <i class="bi bi-chevron-down"></i></a>
+        <li class="dropdown"><a href="#"><span class="text-dark">Domaine d'expertise</span> <i class="bi bi-chevron-down text-dark"></i></a>
           <ul>
             <li><a>Art de vivre</a></li>
             <li><a>Culture</a></li>
@@ -43,8 +43,12 @@
             <li><a>Toutes les spécialités</a></li>
           </ul>
         </li>
+
+        <li><a class="nav-link scrollto text-dark {{ $focus == 'tarif'? 'active' : ' ' }}" href="{{ route('tarif') }}">Tarif et Formule</a></li>
+        <!-- <li><a class="nav-link scrollto text-dark {{ $focus == 'about-us'? 'active' : ' ' }}" href="{{ route('home') }}">A propos de nous</a></li> -->
+
         @if(($focus == 'contact') || ($focus == 'ordertext'))
-        <li class="dropdown"><a href="#" class="active"><span id="person"><i class="bi bi-envelope fs-5"></i> Nous contacter</span></a>
+        <li class="dropdown"><a href="#" class="active"><span id="person" class="text-dark"><i class="bi bi-envelope fs-5"></i> Nous contacter</span></a>
           <ul>
             <li><a href="{{ route('contact') }}">Laisser-nous un message</a></li>
             <li><a href="{{ route('ordertext') }}">Commander des textes <i class="bi bi-arrow-right fs-4"></i> </a></li>
@@ -52,7 +56,7 @@
 
         </li>
         @else
-        <li class="dropdown"><a href="#"><span id="person"><i class="bi bi-envelope fs-5"></i> Nous contacter</span></a>
+        <li class="dropdown"><a href="#"><span id="person" class="text-dark"><i class="bi bi-envelope fs-5"></i> Nous contacter</span></a>
           <ul>
             <li><a href="{{ route('contact') }}">Laisser-nous un message</a></li>
             <li><a href="{{ route('ordertext') }}">Commander des textes <i class="bi bi-arrow-right fs-4"></i> </a></li>

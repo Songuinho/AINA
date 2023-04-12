@@ -1,24 +1,29 @@
 <?php
 
-
-
 return [
 
-    "name" =>[
+    'custom' => [
 
-        "required" => "le nom est obligatoire"
-    ],
+        "emailsubscribe " => [
 
-    "email" =>[
+            "required" => "Il y'a une errreur sur votre mail!"
+        ],
 
-        "required" => "le mail est obligatoire"
-    ],
+        "name" => [
 
-    "subject" =>[
+            "required" => "veillez renseigner ce champ!"
+        ],
 
-        "required" => "l'objet est obligatoire"
-    ],
+        "email" => [
+
+            "required" => "veillez inserer l' e-mail!"
+        ],
+
+        "subject" => [
+
+            "required" => "veillez renseigner ce champ!"
+        ],
+        
+    ]
 
 ];
-
-

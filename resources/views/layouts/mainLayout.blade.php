@@ -18,7 +18,7 @@
     <link href="{{ asset('assets/img/gallery/business.svg') }}" rel="image-profesor">
 
     <!-- Google Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
 
@@ -34,14 +34,15 @@
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
+    <!-- Template Main CSS File  Services-->
+    <link href="{{ asset('services/css/style.css') }}" rel="stylesheet">
+
     <!-- carousel links -->
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="carousel/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-    <link rel="stylesheet" href="carousel/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 
 </head>
 
@@ -67,13 +68,8 @@
     <script src="{{ asset('assets/js/main.js') }}"></script>
 
     <!-- Carousel Script -->
-
-    <script src="carousel/js/jquery.min.js"></script>
-    <script src="carousel/js/popper.js"></script>
-    <script src="carousel/js/bootstrap.min.js"></script>
-    <script src="carousel/js/owl.carousel.min.js"></script>
-    <script src="carousel/js/main.js"></script>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

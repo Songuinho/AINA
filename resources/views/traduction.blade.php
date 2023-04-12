@@ -11,8 +11,11 @@ Aina | Redaction
 <section id="traducteur">
 
     <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+        <div class="row justify-content-center">
+            <div class="align-items-center">
+                <div data-aos="zoom-out">
+                    <h2 class="text-white">Sollicitez les services de notre agence de traduction.</h2>
+                </div>
             </div>
         </div>
     </div>
@@ -21,17 +24,16 @@ Aina | Redaction
 
 <!-- ======= About Section ======= -->
 <section id="about" class="about">
-    <div class="container-fluid">
+    <div class="container-fluid mb-5">
 
         <div class="row" id="redactor">
             <div class="col-xl-5 animated col-lg-6 traduction-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
             </div>
 
             <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-                <h3 style="color: gray;">Sollicitez les services de notre agence de traduction.
-                </h3>
-                <p>Nous sommes spécialisés dans la traduction de vos contenus. De ce fait, nous pouvons traduire selon votre secteur d'activité vos textes dans plus de 10 langues.
                 <p>
+                    Nous sommes spécialisés dans la traduction de vos contenus. De ce fait, nous pouvons traduire selon votre secteur d'activité vos textes dans plus de 10 langues.
+                </p>
 
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon"><svg class="svg-inline--fa fa-file-certificate fa-2xl pr-4" aria-hidden="true" width='30' focusable="false" data-prefix="fal" data-icon="file-certificate" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
@@ -65,11 +67,11 @@ Aina | Redaction
 
 
 <!-- ======= Features Section ======= -->
-<section id="features" class="features" style="background: #fce3d2;">
+<section id="features" class="features" style="background: #dbf2e6;">
     <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-            <h2>Nos différents services</h2>
+            <h2>Nos différents types de traduction</h2>
         </div>
 
         <div class="row" data-aos="fade-left">
@@ -106,17 +108,17 @@ Aina | Redaction
     <div class="container">
 
         <div class="row content">
-        <div class="col-md-4" data-aos="fade-right" id="redactor">
-            <img src="assets/img/aina_pictures/fonctionnement.png" class="img-fluid rounded animated" alt="">
-          </div>
+            <div class="col-md-4" data-aos="fade-right" id="redactor">
+                <img src="assets/img/aina_pictures/fonctionnement.png" class="img-fluid rounded animated" alt="">
+            </div>
             <div class="col-md-8 pt-4" data-aos="fade-up">
                 <h3>Fonctionnement</h3>
                 <p>
-                  Nous avons un mode de fonctionnement rapide, il permet de nous adapter à tous vos bésoins. Pour pouvoir vous aidez à avoir des meilleurs traductions, nous travaillons du plus simple au plus important ainsi definie tel-que :
+                    Nous avons un mode de fonctionnement rapide, il permet de nous adapter à tous vos bésoins. Pour pouvoir vous aidez à avoir des meilleurs traductions, nous travaillons du plus simple au plus important ainsi definie tel-que :
                 </p>
                 <ul>
                     <li><i class="bi bi-check"></i> L'identification des bésoins.</li>
-                    <p>Ici,  vous dévrez définir vos besoins, énumérer minussieusement vos attentes pour la traduction de vos contenus puis faire le paiement de votre commande pour nous permettre de transmettre cela au rédacteur. </p>
+                    <p>Ici, vous dévrez définir vos besoins, énumérer minussieusement vos attentes pour la traduction de vos contenus puis faire le paiement de votre commande pour nous permettre de transmettre cela au rédacteur. </p>
                     <li><i class="bi bi-check"></i> L'optention des traductions.</li>
                     <p>Une fois la transaction finie, vous pourriez échanger avec notre chef de projet. S'il arrive que les textes traduis ne sont pas à votre convénance, de ce part, vous pourrez demander des modifications qui ne seront pas facturées.</p>
                 </ul>
@@ -124,21 +126,21 @@ Aina | Redaction
         </div>
 
         <div class="row content">
-          <div class="col-md-4 order-1 order-md-2" id="redactor" data-aos="fade-left">
-            <img src="assets/img/aina_pictures/traduction.jpg" class="img-fluid animated rounded-3" alt="">
-          </div>
-          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
-            <h3>Solliciter notre expertise dans la traduction quel qu'en soit votre domaine de compétence</h3>
-            <p>
-              En choisissnat notre agence pour une commande de traduction, vous bénéfissiez du professionnalisme de notre personnel. Nos experts traducteurs ont la qualité de s'adapter dans la traduction dans tous secteurs d'activité professionnel.
-            </p>
-            <div class="d-flex" data-aos="zoom-out">
-              <div class="btn-wrap pricing mt-3" id="pricing" >
-              <a href="{{ route('orderquote') }}" class="btn-buy">Commander des textes</a>
+            <div class="col-md-4 order-1 order-md-2 mt-5"  id="redactor" data-aos="fade-left">
+                <img src="assets/img/aina_pictures/traduction.jpg" class="img-fluid animated rounded-3" alt="">
             </div>
-          </div>
+            <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+                <h3>Solliciter notre expertise dans la traduction quel qu'en soit votre domaine de compétence</h3>
+                <p>
+                    En choisissnat notre agence pour une commande de traduction, vous bénéfissiez du professionnalisme de notre personnel. Nos experts traducteurs ont la qualité de s'adapter dans la traduction dans tous secteurs d'activité professionnel.
+                </p>
+                <div class="d-flex" data-aos="zoom-out">
+                    <div class="btn-wrap pricing mt-3" id="pricing">
+                        <a href="{{ route('orderquote') }}" class="btn-buy">Commander des textes</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 </section>
 
 

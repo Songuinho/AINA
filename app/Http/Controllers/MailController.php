@@ -12,7 +12,7 @@ class MailController extends Controller
 
     public function sendmail(Request $request)
     {
-        $request->validate([
+        $validatorData = $request->validate([
             "name" => "required",
             "email" => "required",
             "subject" => "required",
@@ -34,33 +34,36 @@ class MailController extends Controller
 
             $fullnamefile = $filename . '_' . uniqid() . '.' . $extension;
 
-            $this->data["file"] = $fullnamefile ;
+            $this->data["file"] = $fullnamefile;
         }
 
         // dd($this->data["name"]);
 
+        try {
+            Mail::send(
 
-        Mail::send(
+                "view_mail",
 
-            "view_mail",
+                [
+                    "name" => $this->data["name"],
 
-            [
-                "name" => $this->data["name"],
+                    "email" => $this->data["email"],
 
-                "email" => $this->data["email"],
+                    "subject" => $this->data["subject"],
 
-                "subject" => $this->data["subject"],
+                    "message" => $this->data["message"],
 
-                "message" => $this->data["message"],
+                    "file" => $this->data["file"]
+                ],
+                function ($msg) {
+                    $this->sending($msg);
+                }
+            );
 
-                "file" => $this->data["file"]
-            ],
-            function ($msg) {
-                $this->sending($msg);
-            }
-        );
-
-        return back()->with($request->session()->flash("message", "Méssage envoyé avec succès !"));
+            return redirect()->back()->with($request->session()->flash("message", "Message envoyé avec succès !"))->withErrors($validatorData);
+        } catch (\Exception $e) {
+            return redirect()->back()->with($request->session()->flash('Errormessage', 'Ooupssss!!! problème de connexion svp! veillez réesayer plus tard. Si le problème persiste bien vouloir nous joindre par Mail (aina.redaction@yahoo.com) ou appelez nous au +237 698 307 457. '));
+        }
     }
 
     public function sending($msg)
@@ -74,17 +77,23 @@ class MailController extends Controller
     public function subscribe(Request $request)
     {
 
-        $request->validate([
-            "email" => "required|email"
+        $validatorEmail = $request->validate([
+            "emailsubscribe" => "required|email"
         ]);
 
-        $this->data =["mail" => $request->email];
+        $this->data = ["mail" => $request->emailsubscribe];
+        dd($request->session());
 
-        Mail::send("subscribe_mail", ["email" => $request->email], function ($msg) {
-            $msg->to("ainaredaction02@gmail.com", "Espoir")
-                ->from($this->data["mail"], 'client');
-        });
+        try {
+            Mail::send("subscribe_mail", ["email" => $request->emailsubscribe], function ($msg) {
+                $msg->to("ainaredaction02@gmail.com", "Aina")
+                    ->from($this->data["mail"], 'client');
+            });
 
-        return redirect()->back()->with($request->session()->flash("message", "Souscription effectuée avec succès !"));
+
+            return redirect()->back()->with($request->session()->flash("subscribemessage", "Souscription effectuée avec succès !"))->withErrors($validatorEmail);
+        } catch (\Exception $e) {
+            return redirect()->back()->with($request->session()->flash('Errorsubscribemessage', 'Ooupssss!!! problème de connexion svp! veillez réesayer plus tard. Si le problème persiste bien vouloir nous joindre par Mail (aina.redaction@yahoo.com) ou appelez nous au +237 698 307 457. '));
+        }
     }
 }

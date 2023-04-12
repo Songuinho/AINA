@@ -10,8 +10,11 @@ Aina | Redaction
 <section id="integrateur">
 
     <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+        <div class="row justify-content-center">
+            <div class="align-items-center">
+                <div data-aos="zoom-out">
+                    <h2 class="text-white">Externaliser l'intégration de vos contenus web</h2>
+                </div>
             </div>
         </div>
     </div>
@@ -21,19 +24,19 @@ Aina | Redaction
 <section id="faq" class="faq section-bg">
     <div class="container" id="redactor">
 
-        <div class="section-title" data-aos="fade-up">
-            <h2>Externaliser l'intégration de vos contenus web</h2>
-        </div>
-
         <div class="faq-list animated">
             <ul>
                 <li data-aos="fade-up">
                     <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1"></a>
                     <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                         <p>
-                        Faire l'intégtration n'a toujours pas été facile pour bon nombre de personne par ce qu'elle necessite un sens aigu des détails et un savoir faire particulier. c'est la raison pour laquelle  nous avons à notre disposition du personnel capable de faire l'intégration de vos textes ou données sur CMS et ce façon minissieuse. 
+                            Faire l'intégtration n'a toujours pas été facile pour bon nombre de personne par ce qu'elle necéssite un sens aigu des détails et un savoir faire particulier. c'est la raison pour laquelle nous avons à notre disposition du personnel capable de faire l'intégration de vos textes ou données sur un CMS et ce façon minissieuse.
                         </p>
-                        <a href="{{route('orderquote')}}">Demander votre dévis</a>
+                        <div class="d-flex" data-aos="zoom-out">
+                            <div class="btn-wrap pricing mt-3" id="pricing">
+                                <a href="{{ route('orderquote') }}" class="btn-buy">Commander des textes</a>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>

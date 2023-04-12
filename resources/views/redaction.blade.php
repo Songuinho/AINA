@@ -10,7 +10,12 @@ Aina | Redaction
 <section id="redacteur">
 
     <div class="container">
-        <div class="row justify-content-between">
+        <div class="row justify-content-center">
+            <div class="align-items-center">
+                <div data-aos="zoom-out">
+                    <h2 class="text-white">Rédigez les contenus de qualités avec nos rédacteurs proféssionnels. </h2>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -18,11 +23,6 @@ Aina | Redaction
 
 <!-- Section redaction presentation -->
 <section class="ftco-section" data-aos="zoom-out" data-aos-delay="300">
-    <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-        <div data-aos="zoom-out">
-            <h2 style="margin-left: 3.5em;">Rédigez les contenus de qualités avec nos rédacteurs proféssionnels. </h2>
-        </div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">

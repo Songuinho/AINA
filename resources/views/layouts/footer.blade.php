@@ -25,28 +25,29 @@
           <h4>Nos conseils</h4>
           <p>Laissez votre E-mail</p>
 
-          <div class="text-success">
-            @if(session()->has("message"))
-            <div class="alert alert-success">{{session()->get('message')}}</div>
+          <div>
+            @if(session()->has("subscribemessage"))
+            <div class="alert alert-success">{{session()->get('subscribemessage')}}</div>
+            @endif
+          </div>
+          
+          <div>
+            @if(session()->has("Errorsubscribemessage"))
+            <div class="alert alert-warning">{{session()->get('Errorsubscribemessage')}}</div>
             @endif
           </div>
 
           <form action="{{ route('subscribe.mail') }}" method="post">
             @csrf
-            <input type="email" name="email" class=" @error('email') is-invalid @enderror" placeholder=" aina.redaction@yahoo.com"><input type="submit" value="Subscribe">
+            <input type="email" name="emailsubscribe" class=" @error('emailsubscribe') is-invalid @enderror" placeholder="aina.redaction@yahoo.com" value="{{ old('emailsubscribe') }}" /><input type="submit" value="Subscribe">
           </form>
-          
-          <span class="text-danger">
-            @error('email')
-            {{$message}}
-            @enderror
-          </span>
 
         </div>
 
         <div class="col-lg-2 col-md-6 footer-links text-start" style="margin-top: 20px;">
-          <h4>FAQ</h4>
+          <h4>Qui sommes-nous ?</h4>
           <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about-us') }}">A propos de nous </a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('questions') }}">Aide pour les clients </a></li>
           </ul>
         </div>
