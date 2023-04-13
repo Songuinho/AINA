@@ -128,7 +128,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: #2766aae6;
+  background: #4c8bcee6;
   height: 90px;
 }
 
@@ -604,14 +604,6 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #1a5bcc;
-  margin: 4px 10px;
-}
 
 .section-title p {
   margin: 0;
@@ -736,6 +728,7 @@ section {
 }
 
 .about .icon-box .title a {
+  text-decoration: none;
   color: #343a40;
   transition: 0.3s;
 }
@@ -1886,3 +1879,65 @@ p{
   left: 0;
   right: 0;
 }
+
+#tarif-hero{
+  width: 100%;
+  background: url("../img/hero-bg.jpg");
+  position: relative;
+  margin-top: 5em;
+  height: 200px;
+  margin-bottom: 5em;
+}
+
+#tarif-hero:before {
+  content: "";
+  background: #a2e3e7e6;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#about-hero{
+  width: 100%;
+  background: url("../img/hero-bg.jpg");
+  position: relative;
+  margin-top: 5em;
+  height: 200px;
+}
+
+#about-hero:before {
+  content: "";
+  background: #a2e3e7e6;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.about-team {
+  background: #fbffff;
+  margin-top: -3em;
+}
+
+.about-team .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.about-team .member .pic {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+p{
+  font-size: 18px;
+}
+
+.about-team p{
+  font-size: 15px;
+}
+

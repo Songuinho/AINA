@@ -27,12 +27,31 @@ Aina | Commander des textes
         <h1 class="text-primary">Articles standards <h6>(Idéal pour les particuliers)</h6>
         </h1>
         <p>Ici, le redacteur web rédige les contenus pour un ou plusieur sites web</p>
+        <div class="show-tarifs">
+            <form action="" class="form" role="form">
+
+                <label for="nombre-de-textes">Nombre de textes :</label>
+                <input type="number" id="nbr_art" placeholder="3" class="form-control" />
+
+
+                <label for="nombre-de-mots">Nombre de mots :</label>
+                <select id="nbr_mot1" class="form-control">
+                                <option value="250">250 mots</option>
+                                <option value="300">300 mots</option>
+                                <option value="500">500 mots</option>
+                                <option value="600">600 mots</option>
+                                <option value="700">700 mots</option>
+                                <option value="900">900 mots</option>
+                                <option value="1000">1000 mots</option>
+                            </select>
+            </form>
+        </div>
         <div class="tb1">
-            <table class="table">
+            <!-- <table class="table">
                 <thead>Tableau récapitulatif du prix standard des mots</thead>
                 <tbody>
                     <tr>
-                        <!-- <th><a class="btn btn-primary" onclick="addText()">nouveau texte</a></th> -->
+                        <th><a class="btn btn-primary" onclick="addText()">nouveau texte</a></th>
                         <th>Nombre de mot</th>
                         <th>Nombre d'article</th>
                         <th>Prix</th>
@@ -55,7 +74,7 @@ Aina | Commander des textes
                     </tr>
 
                 </tbody>
-            </table>
+            </table> -->
         </div>
     </div>
     <div class="row col-xm--3 col-sm-6 mr-5">

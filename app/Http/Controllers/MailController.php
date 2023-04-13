@@ -11,12 +11,16 @@ class MailController extends Controller
     protected $data = [];
 
     public function sendmail(Request $request)
-    {
+    {   
+
+        // $request->session()->regenerate();
+
         $validatorData = $request->validate([
             "name" => "required",
             "email" => "required",
             "subject" => "required",
         ]);
+
 
         $this->data = [
             "name" => $request->name,
@@ -59,11 +63,14 @@ class MailController extends Controller
                     $this->sending($msg);
                 }
             );
-
+            
+            // dd($request->session()->all());
             return redirect()->back()->with($request->session()->flash("message", "Message envoyé avec succès !"))->withErrors($validatorData);
         } catch (\Exception $e) {
             return redirect()->back()->with($request->session()->flash('Errormessage', 'Ooupssss!!! problème de connexion svp! veillez réesayer plus tard. Si le problème persiste bien vouloir nous joindre par Mail (aina.redaction@yahoo.com) ou appelez nous au +237 698 307 457. '));
         }
+
+
     }
 
     public function sending($msg)
@@ -75,7 +82,9 @@ class MailController extends Controller
 
 
     public function subscribe(Request $request)
-    {
+    {   
+
+        $request->session()->regenerate();
 
         $validatorEmail = $request->validate([
             "emailsubscribe" => "required|email"

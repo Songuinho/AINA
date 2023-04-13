@@ -48,7 +48,7 @@
           <h4>Qui sommes-nous ?</h4>
           <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about-us') }}">A propos de nous </a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('questions') }}">Aide pour les clients </a></li>
+            <!-- <li><i class="bx bx-chevron-right"></i> <a href="{{ route('questions') }}">Aide pour les clients </a></li> -->
           </ul>
         </div>
 

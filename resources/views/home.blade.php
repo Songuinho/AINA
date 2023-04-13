@@ -17,15 +17,15 @@ Aina | Accueil
           <h5 class="text-white">Bénéficiez du professionnalisme, du savoir-faire et l'expertise de notre équipe pour la rédaction de vos textes, rapidement et sans effort.</h5>
           <div class="d-flex">
             <div class="text-center  text-lg-start flex-grow-1">
-              <a href="{{ route('ordertext') }}" class="btn-get-started scrollto">Commander des textes</a>
+              <a href="{{ route('tarif') }}" class="btn-get-started scrollto">Commander des textes</a>
             </div>
             <div class="text-center text-lg-start flex-grow-1">
-              <a href="{{ route('orderquote') }}" class="btn-get-started scrollto ">Demander un devis</a>
+              <a href="{{ route('tarif') }}" class="btn-get-started scrollto ">Demander un devis</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-5 col-xs-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+      <div class="col-lg-5 col-xs-6 order-1 order-md-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
         <img src="assets/img/aina_pictures/accueil.avif" class="img-fluid animated" alt="">
       </div>
     </div>
@@ -51,7 +51,7 @@ Aina | Accueil
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+        <div class="col-xl-6 col-lg-6 order-2 order-md-1 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
           <p>Profitez des textes personnalisés pour votre structure professionnelle et ceux dans un style adapté à votre cible et à l’identité de votre marque.
           </p>
           <p>Nos rédacteurs sont capables de vous fournir des textes à l’image de votre entreprise, d'être à votre service afin de vous aider à atteindre vos objectifs; qu’ils soient d’aviser ou de convertir.
@@ -82,7 +82,7 @@ Aina | Accueil
           </div>
 
         </div>
-        <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+        <div class="col-xl-6 col-lg-6 order-1 order-md-2 col-sm-6 col-xs-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
         </div>
       </div>
 
@@ -105,7 +105,7 @@ Aina | Accueil
               <div class="container d-flex justify-content-center" style="margin-top: 1em;">
                 <div class="d-flex" data-aos="zoom-out">
                   <div class="btn-wrap pricing mt-3" id="pricing">
-                    <a href="{{ route('ordertext') }}" class="btn-buy">Commander des textes</a>
+                    <a href="{{ route('tarif') }}" class="btn-buy">Commander des textes</a>
                   </div>
                 </div>
               </div>
