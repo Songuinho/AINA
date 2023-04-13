@@ -75,19 +75,19 @@ Aina | Tarif et formule
 
 
 <!-- Section array prices -->
-<section class="tarifs" id="tarifs">
+<section class="tarifs details" id="tarifs">
     <div class="container" data-aos="zoom-out">
-        <div class="s-1 col-lg-12 d-flex justify-content-between"  data-aos="fade-up">
-            <div class="row col-lg-8">
+        <div class="s-1 col-lg-12 d-flex justify-content-between" data-aos="fade-up">
+            <div class="row content col-lg-8">
                 <div class="text">
                     <h1 class="text-primary">Qualité standard
                     </h1>
                     <p>Rédaction de qualité basique pour les textes courts et simples.</p>
                     <ul>
-                        <li>Rédaction humaine sans IA</li>
-                        <li>Protection anti-plagiat</li>
-                        <li>Choix des rédacteurs</li>
-                        <li>Tous les secteurs d’activité</li>
+                        <li><i class="bi bi-check"></i>Rédaction humaine sans IA</li>
+                        <li><i class="bi bi-check"></i>Protection anti-plagiat</li>
+                        <li><i class="bi bi-check"></i>Choix des rédacteurs</li>
+                        <li><i class="bi bi-check"></i>Tous les secteurs d’activité</li>
                     </ul>
                 </div>
                 <div class="tarif-1 ">
@@ -109,8 +109,8 @@ Aina | Tarif et formule
             </div>
 
             <div class="tarif-2 col-lg-4" style="margin-left: 7em;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header" style="text-align: center;">
+                <div class="card bg-info" style="width: 18rem;">
+                    <div class="card-header text-white" style="text-align: center;">
                         standard
                     </div>
                     <ul class="list-group list-group-flush">
@@ -118,9 +118,9 @@ Aina | Tarif et formule
                         </li>
                         <li class="list-group-item">Nombre de mots<input type="text" readonly disabled id="show_nbr_mot1" />
                         </li>
-                        <li class="list-group-item">Prix HT <br><input type="text" readonly disabled id="prixTotal1" />
+                        <li class="list-group-item">Prix HT <br><input type="text" readonly disabled id="prixHT1" />
                         </li>
-                        <li` class="list-group-item">Prix TTC <br><input type="text" readonly disabled id="prixTotal1" />
+                        <li` class="list-group-item">Prix TTC <br><input type="text" readonly disabled id="prixTTC1" />
                             </li>
                     </ul>
                 </div>
@@ -129,17 +129,17 @@ Aina | Tarif et formule
 
         <hr class="mt-5">
 
-        <div class="s-2 ol-lg-12 d-flex mt-5 justify-content-between"  data-aos="fade-up">
-            <div class=" row col-lg-8">
+        <div class="s-2 ol-lg-12 d-flex mt-5 justify-content-between" data-aos="fade-up">
+            <div class=" row content col-lg-8">
                 <div class="text">
                     <h1 class="text-primary">Qualité professionnelle</h1>
                     <p>Rédaction de qualité élevée fait pour les textes généralisés pour toute thématique.</p>
                     <ul>
-                        <li>Rédaction humaine sans IA</li>
-                        <li>Protection anti-plagiat</li>
-                        <li>Grand choix des rédacteurs</li>
-                        <li>Expertise dans votre domaines d’activité</li>
-                        <li>Service client privilège</li>
+                        <li><i class="bi bi-check"></i>Rédaction humaine sans IA</li>
+                        <li><i class="bi bi-check"></i>Protection anti-plagiat</li>
+                        <li><i class="bi bi-check"></i>Grand choix des rédacteurs</li>
+                        <li><i class="bi bi-check"></i>Expertise dans votre domaines d’activité</li>
+                        <li><i class="bi bi-check"></i>Service client privilège</li>
                     </ul>
                 </div>
 
@@ -163,8 +163,8 @@ Aina | Tarif et formule
             </div>
 
             <div class="tarif-2 col-lg-4" style="margin-left: 7em;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header" style="text-align: center;">
+                <div class="card bg-info" style="width: 18rem;">
+                    <div class="card-header text-white" style="text-align: center;">
                         Professionnelle
                     </div>
                     <ul class="list-group list-group-flush">
@@ -172,9 +172,9 @@ Aina | Tarif et formule
                         </li>
                         <li class="list-group-item">Nombre de mots<input type="text" readonly disabled id="show_nbr_mot2" />
                         </li>
-                        <li class="list-group-item">Prix HT <br><input type="text" readonly disabled id="prixTotal2" />
+                        <li class="list-group-item">Prix HT <br><input type="text" readonly disabled id="prixHT2" />
                         </li>
-                        <li class="list-group-item">Prix TTC <br><input type="text" readonly disabled id="prixTotal1" />
+                        <li class="list-group-item">Prix TTC <br><input type="text" readonly disabled id="prixTTC2" />
                         </li>
                     </ul>
                 </div>
@@ -184,29 +184,29 @@ Aina | Tarif et formule
 
         <hr class="mt-5">
 
-        <div class="s-2 ol-lg-12 d-flex mt-5 justify-content-between"  data-aos="fade-up">
-            <div class=" row col-lg-8">
+        <div class="s-2 ol-lg-12 d-flex mt-5 justify-content-between" data-aos="fade-up">
+            <div class=" row content col-lg-8">
                 <div class="text">
                     <h1 class="text-primary">Qualité expert</h1>
                     <p>Rédaction de qualité supérieure fait pour les contenus élaborés et techniques.</p>
                     <ul>
-                        <li>Rédaction humaine sans IA</li>
-                        <li>Protection anti-plagiat</li>
-                        <li>Meilleur choix des rédacteurs</li>
-                        <li>Expertise approfondie dans votre domaine d’activité </li>
-                        <li>Service client privilégié</li>
-                        <li>Chef de projet dédié et un accompagnement personnalisé</li>
-                        <li>Tous les secteurs d’activité</li>
+                        <li><i class="bi bi-check"></i>Rédaction humaine sans IA</li>
+                        <li><i class="bi bi-check"></i>Protection anti-plagiat</li>
+                        <li><i class="bi bi-check"></i>Meilleur choix des rédacteurs</li>
+                        <li><i class="bi bi-check"></i>Expertise approfondie dans votre domaine d’activité </li>
+                        <li><i class="bi bi-check"></i>Service client privilégié</li>
+                        <li><i class="bi bi-check"></i>Chef de projet dédié et un accompagnement personnalisé</li>
+                        <li><i class="bi bi-check"></i>Tous les secteurs d’activité</li>
                     </ul>
                 </div>
 
                 <div class="tarif-2 mt-3">
 
                     <label for="nombre-de-textes">Combien de texte souhaitez-vous faire rédiger ?</label>
-                    <input type="number" id="nbr_art2" placeholder="1 Textes" class="form-control" />
+                    <input type="number" id="nbr_art3" placeholder="1 Textes" class="form-control" />
 
                     <label for="nombre-de-mots">Quelle longueur souhaitez-vous pour vos textes ?</label>
-                    <select id="nbr_mot2" class="form-control">
+                    <select id="nbr_mot3" class="form-control">
                         <option value="250">250 mots</option>
                         <option value="300">300 mots</option>
                         <option value="500">500 mots</option>
@@ -220,18 +220,18 @@ Aina | Tarif et formule
             </div>
 
             <div class="tarif-2 col-lg-4" style="margin-left: 7em;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header" style="text-align: center;">
+                <div class="card bg-info" style="width: 18rem;">
+                    <div class="card-header text-white" style="text-align: center;">
                         Expert
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Nombre de textes<input type="text" readonly disabled id="show_nbr_art2" />
+                        <li class="list-group-item">Nombre de textes<input type="text" readonly disabled id="show_nbr_art3" />
                         </li>
-                        <li class="list-group-item">Nombre de mots<input type="text" readonly disabled id="show_nbr_mot2" />
+                        <li class="list-group-item">Nombre de mots<input type="text" readonly disabled id="show_nbr_mot3" />
                         </li>
-                        <li class="list-group-item">Prix HT <br><input type="text" readonly disabled id="prixTotal2" />
+                        <li class="list-group-item">Prix HT <br><input type="text" readonly disabled id="prixHT3" />
                         </li>
-                        <li class="list-group-item">Prix TTC <br><input type="text" readonly disabled id="prixTotal1" />
+                        <li class="list-group-item">Prix TTC <br><input type="text" readonly disabled id="prixTTC3" />
                         </li>
                     </ul>
                 </div>
@@ -335,7 +335,8 @@ Aina | Tarif et formule
     const pricePerText = 0.04;
     const numberOfWordsInput = document.getElementById("nbr_mot1");
     const numberOfTextsInput = document.getElementById("nbr_art1");
-    const totalPriceInput = document.getElementById("prixTotal1");
+    const totalPriceInputHT = document.getElementById("prixHT1");
+    const totalPriceInputTTC = document.getElementById("prixTTC1");
 
     const numberOfTextsP = document.getElementById("show_nbr_art1");
     const numberOfWordsP = document.getElementById("show_nbr_mot1");
@@ -346,22 +347,26 @@ Aina | Tarif et formule
 
         const totalPrice = numberOfTexts * numberOfWords * pricePerText;
 
-        totalPriceInput.value = totalPrice.toFixed(2) + "€";
+        totalPriceInputHT.value = totalPrice.toFixed(2) + "€";
         numberOfTextsP.value = numberOfTexts;
         numberOfWordsP.value = numberOfWords;
+
+        const totalPriceTTC = totalPrice * 0.1925 + totalPrice;
+        totalPriceInputTTC.value = totalPriceTTC.toFixed(2) + "€";
 
     }
 
     numberOfTextsInput.addEventListener("change", calculTotalPrice);
     numberOfWordsInput.addEventListener("input", calculTotalPrice);
 
-    // Premium
+    // Professionnelle
 
 
-    const pricePerText2 = 0.2;
+    const pricePerText2 = 0.06;
     const numberOfWordsInput2 = document.getElementById("nbr_mot2");
     const numberOfTextsInput2 = document.getElementById("nbr_art2");
-    const totalPriceInput2 = document.getElementById("prixTotal2");
+    const totalPriceInputHT2 = document.getElementById("prixHT2");
+    const totalPriceInputTTC2 = document.getElementById("prixTTC2");
 
     const numberOfTextsP2 = document.getElementById("show_nbr_art2");
     const numberOfWordsP2 = document.getElementById("show_nbr_mot2");
@@ -372,13 +377,46 @@ Aina | Tarif et formule
 
         const totalPrice2 = numberOfTexts * numberOfWords * pricePerText2;
 
-        totalPriceInput2.value = totalPrice2.toFixed(2) + "€";
+        totalPriceInputHT2.value = totalPrice2.toFixed(2) + "€";
         numberOfTextsP2.value = numberOfTexts;
         numberOfWordsP2.value = numberOfWords;
+
+        const totalPriceTTC2 = totalPrice2 * 0.1925 + totalPrice2;
+        totalPriceInputTTC2.value = totalPriceTTC2.toFixed(2) + "€";
 
     }
 
     numberOfTextsInput2.addEventListener("change", calculTotalPrice2);
     numberOfWordsInput2.addEventListener("input", calculTotalPrice2);
+
+    // Expert
+
+
+    const pricePerText3 = 0.11;
+    const numberOfWordsInput3 = document.getElementById("nbr_mot3");
+    const numberOfTextsInput3 = document.getElementById("nbr_art3");
+    const totalPriceInputHT3 = document.getElementById("prixHT3");
+    const totalPriceInputTTC3 = document.getElementById("prixTTC3");
+
+    const numberOfTextsP3 = document.getElementById("show_nbr_art3");
+    const numberOfWordsP3 = document.getElementById("show_nbr_mot3");
+
+    function calculTotalPrice3() {
+        const numberOfWords = parseInt(numberOfWordsInput3.value);
+        const numberOfTexts = parseInt(numberOfTextsInput3.value);
+
+        const totalPrice3 = numberOfTexts * numberOfWords * pricePerText3;
+
+        totalPriceInputHT3.value = totalPrice3.toFixed(2) + "€";
+        numberOfTextsP3.value = numberOfTexts;
+        numberOfWordsP3.value = numberOfWords;
+
+        const totalPriceTTC3 = totalPrice3 * 0.1925 + totalPrice3;
+        totalPriceInputTTC3.value = totalPriceTTC3.toFixed(2) + "€";
+
+    }
+
+    numberOfTextsInput3.addEventListener("change", calculTotalPrice3);
+    numberOfWordsInput3.addEventListener("input", calculTotalPrice3);
 </script>
 @endsection

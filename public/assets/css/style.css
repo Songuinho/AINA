@@ -932,14 +932,11 @@ section {
   padding: 0;
 }
 
-.details .content ul li {
-  padding-bottom: 10px;
-}
 
 .details .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #1acc8d;
+  color: #1a52cc;
 }
 
 .details .content p:last-child {
@@ -1941,3 +1938,6 @@ p{
   font-size: 15px;
 }
 
+#tarifs{
+  background: #f9f8ca;
+}
