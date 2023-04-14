@@ -26,7 +26,7 @@ Aina | Accueil
         </div>
       </div>
       <div class="col-lg-5 col-xs-6 order-1 order-md-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-        <img src="assets/img/aina_pictures/accueil.avif" class="img-fluid animated" alt="">
+        <img src="assets/img/aina_pictures/femme.jpg" height="400px" class="img-fluid animated rounded-1" alt="">
       </div>
     </div>
   </div>

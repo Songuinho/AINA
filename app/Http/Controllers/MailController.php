@@ -103,7 +103,7 @@ class MailController extends Controller
             });
 
 
-            return redirect()->back()->with($request->session()->flash("subscribemessage", "Souscription effectuée avec succès !"))->withErrors($validatorEmail);
+            return redirect()->back()->with($request->session()->flash("subscribemessage", "Souscription effectuée avec succès !"));
         } catch (\Exception $e) {
             return redirect()->back()->with($request->session()->flash('Errorsubscribemessage', 'Ooupssss!!! problème de connexion svp! veillez réesayer plus tard. Si le problème persiste bien vouloir nous joindre par Mail (aina.redaction@yahoo.com) ou appelez nous au +237 698 307 457. '));
         }

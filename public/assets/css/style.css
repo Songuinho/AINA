@@ -1825,7 +1825,6 @@ p{
 
 #service{
   background-color: #dbf2e6;
-  margin-bottom: 5em;
 }
 
 #service .row .content a{
@@ -1843,20 +1842,12 @@ p{
 
 #contact-hero{
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/cta-bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
   position: relative;
   margin-top: 5em;
   height: 250px;
-}
-
-#contact-hero:before {
-  content: "";
-  background: #a2e3e7e6;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 #ordertext-hero{
@@ -1944,4 +1935,11 @@ p{
 
 #tarifs-traduction{
   background: #e7f3f0;
+}
+
+.bg-hero{
+  background: url("../img/aina_pictures/contact-us.jpeg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
 }

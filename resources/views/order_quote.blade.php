@@ -24,23 +24,25 @@ Aina | Commander un devis
 <section id="contact" class="contact">
     <div class="container">
 
-        <div class="text-warning">
-            @if(session()->has("Errormessage"))
-            <div class="alert alert-warning">{{session()->get('Errormessage')}}</div>
+        <div class="messsages col-md-8">
+            <div class="text-warning">
+                @if(session()->has("Errormessage"))
+                <div class="alert alert-warning">{{session()->get('Errormessage')}}</div>
+                @endif
+            </div>
+
+            <div class="text-success">
+                @if(session()->has("message"))
+                <div class="alert alert-success">{{session()->get('message')}}</div>
+                @endif
+            </div>
+
+            @if(count($errors) > 0)
+            <div class="alert alert-danger">
+                <p>Une erreur c'est produite !</p>
+            </div>
             @endif
         </div>
-
-        <div class="text-success">
-            @if(session()->has("message"))
-            <div class="alert alert-success">{{session()->get('message')}}</div>
-            @endif
-        </div>
-
-        @if(count($errors) > 0)
-        <div class="alert alert-danger">
-            <p>Une erreur c'est produite !</p>
-        </div>
-        @endif
 
         <div class="section-title" data-aos="fade-up">
             <p>Nous contacter</p>
@@ -56,31 +58,16 @@ Aina | Commander un devis
 
                         <div class="col-md-6 form-group">
                             <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" value="{{ old('name') }}" placeholder="Votre nom">
-                            @error('name')
-                            <span class="text-danger">
-                                {{$message}}
-                            </span>
-                            @enderror
 
                         </div>
 
                         <div class="col-md-6 form-group mt-3 mt-md-0">
                             <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{ old('email') }}" placeholder="Votre e-mail">
-                            @error('email')
-                            <span class="text-danger">
-                                {{$message}}
-                            </span>
-                            @enderror
                         </div>
                     </div>
 
                     <div class="form-group mt-3">
                         <input type="text" class="form-control @error('subject') is-invalid @enderror" name="subject" id="subject" value="{{ old('subject') }}" placeholder="Objet du message">
-                        @error('subject')
-                        <span class="text-danger">
-                            {{$message}}
-                        </span>
-                        @enderror
                     </div>
 
                     <div class="form-group mt-3">
@@ -90,7 +77,7 @@ Aina | Commander un devis
                     </div>
 
                     <div class="form-group mt-3">
-                        <input type="file" class="form-control" name="file" id="subject" multiple/>
+                        <input type="file" class="form-control" name="file" id="subject" multiple />
                         <div class="small text-muted mt-2">Ajouter un fichier. Taille maximum 50 MB</div>
                     </div>
                     <div class="text-center" id="send"><button type="submit">Envoyer</button></div>
