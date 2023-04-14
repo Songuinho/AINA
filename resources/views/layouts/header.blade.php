@@ -47,21 +47,10 @@
         <li><a class="nav-link scrollto text-dark {{ $focus == 'tarif'? 'active' : ' ' }}" href="{{ route('tarif') }}">Tarif et Formule</a></li>
         <!-- <li><a class="nav-link scrollto text-dark {{ $focus == 'about-us'? 'active' : ' ' }}" href="{{ route('home') }}">A propos de nous</a></li> -->
 
-        @if(($focus == 'contact') || ($focus == 'ordertext'))
-        <li class="dropdown"><a href="#" class="active"><span id="person" class="text-dark"><i class="bi bi-envelope fs-5"></i> Nous contacter</span></a>
-          <ul>
-            <li><a href="{{ route('contact') }}">Laisser-nous un message</a></li>
-            <li><a href="{{ route('ordertext') }}">Commander des textes <i class="bi bi-arrow-right fs-4"></i> </a></li>
-          </ul>
-
-        </li>
+        @if(($focus == 'contact'))
+        <li class="dropdown"><a href="{{route('contact')}}" class="active"><span id="person" class="text-dark">Contacter</span></a> </li>
         @else
-        <li class="dropdown"><a href="#"><span id="person" class="text-dark"><i class="bi bi-envelope fs-5"></i> Nous contacter</span></a>
-          <ul>
-            <li><a href="{{ route('contact') }}">Laisser-nous un message</a></li>
-            <li><a href="{{ route('ordertext') }}">Commander des textes <i class="bi bi-arrow-right fs-4"></i> </a></li>
-          </ul>
-        </li>
+        <li class="dropdown flex-inline  "><a href="{{route('contact')}}"><span id="person" class="text-dark">Contacter</span></a> </li>
         @endif
 
       </ul>

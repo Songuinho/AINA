@@ -45,9 +45,9 @@
         </div>
 
         <div class="col-lg-2 col-md-6 footer-links text-start" style="margin-top: 20px;">
-          <h4>Qui sommes-nous ?</h4>
+          <h4>Plus d'info</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about-us') }}">A propos de nous </a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about-us') }}">Qui sommes-nous ?</a></li>
             <!-- <li><i class="bx bx-chevron-right"></i> <a href="{{ route('questions') }}">Aide pour les clients </a></li> -->
           </ul>
         </div>

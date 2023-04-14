@@ -90,7 +90,7 @@ Aina | Commander un devis
                     </div>
 
                     <div class="form-group mt-3">
-                        <input type="file" class="form-control" name="file" id="subject">
+                        <input type="file" class="form-control" name="file" id="subject" multiple/>
                         <div class="small text-muted mt-2">Ajouter un fichier. Taille maximum 50 MB</div>
                     </div>
                     <div class="text-center" id="send"><button type="submit">Envoyer</button></div>

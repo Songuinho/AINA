@@ -80,7 +80,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1acc8d;
+  background: #1a6acc;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -462,7 +462,7 @@ h6 {
   transition: 0.5s;
   color: #278ac3;
   background: #fff;
-  border: 2px solid #086fab;
+  border: 1px solid #086fab;
 }
 
 #hero .btn-get-started:hover {
@@ -1825,7 +1825,7 @@ p{
 
 #service{
   background-color: #dbf2e6;
-  margin-bottom: 7em;
+  margin-bottom: 5em;
 }
 
 #service .row .content a{
@@ -1940,4 +1940,8 @@ p{
 
 #tarifs{
   background: #f9f8ca;
+}
+
+#tarifs-traduction{
+  background: #e7f3f0;
 }

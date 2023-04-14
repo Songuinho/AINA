@@ -74,7 +74,7 @@ Aina | Redaction
                     <div class="d-flex" col-md-6 data-aos="zoom-out">
                         <!-- <div class="icon"><img src="assets/img/gallery/whatsap.svg" width="80px" height="60px"></div> -->
                         <div class="btn-wrap pricing mt-3" id="pricing">
-                            <a href="{{ route('orderquote') }}" class="btn-buy">Commander des textes</a>
+                            <a href="{{ route('tarif') }}" class="btn-buy">Commander des textes</a>
                         </div>
                     </div>
                 </div>

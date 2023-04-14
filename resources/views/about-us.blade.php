@@ -30,33 +30,20 @@ Aina | A propos de nous
             </div>
             <div data-aos="fade-up">
                 <p>
-                    L’association de talent et rapidité font de notre équipe des professionnels de la rédaction. Grace à ses deux qualités, nous vous garantissons un travail bien fait et ceux dans les brefs délais. </p>
+                    Ce projet est né suite à la rencontre entre Monsieur FAUSSI consultant marketing, PDG de l'entreprise WIB et Madame TCHOUNKEU NANA rédactrice web senior et Gestionnaire des Ressources Humaines. Ces deux personnes donc la conviction est la même, ont pris l’initiative de mettre sur pied une entreprise de rédaction web afin de pallier le manque de rédacteur qui se vit dans le monde en général. </p>
 
             </div>
         </div>
 
         <hr class="mt-3 text-info h-5">
-        
-        <div class="row mt-5">
-            <div data-aos="fade-up">
-                <h3 class="text-info">Notre mission.</h3>
-            </div>
-            <div data-aos="fade-up">
-                <p>
-                    L’association de talent et rapidité font de notre équipe des professionnels de la rédaction. Grace à ses deux qualités, nous vous garantissons un travail bien fait et ceux dans les brefs délais. </p>
 
-            </div>
-        </div>
-        
-        <hr class="mt-3 text-info h-5">
-        
         <div class="row mt-5">
             <div data-aos="fade-up">
                 <h3 class="text-info">Notre Vision.</h3>
             </div>
             <div data-aos="fade-up">
                 <p>
-                    L’association de talent et rapidité font de notre équipe des professionnels de la rédaction. Grace à ses deux qualités, nous vous garantissons un travail bien fait et ceux dans les brefs délais. </p>
+                    La vision de cette entreprise nouvellement créée est de devenir l’une des meilleures agences de rédaction web sur le plan national et international. Pour parvenir à cela, les membres du directoire de l’entreprise ont pour mission de mettre en place de nombreuses ressources composées d’un personnel dont la capacité pour l’écriture est innée, capable d’utiliser l’outil informatique qui leur permettra de faire les investigations pour la rédaction, la traduction et l'intégration des contenues. De mettre enfin le matériel adéquate qui va nous aider à atteindre les objectifs. </p>
 
             </div>
         </div>

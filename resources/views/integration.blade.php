@@ -34,7 +34,7 @@ Aina | Redaction
                         </p>
                         <div class="d-flex" data-aos="zoom-out">
                             <div class="btn-wrap pricing mt-3" id="pricing">
-                                <a href="{{ route('orderquote') }}" class="btn-buy">Commander des textes</a>
+                                <a href="{{ route('tarif') }}" class="btn-buy">Commander des textes</a>
                             </div>
                         </div>
                     </div>

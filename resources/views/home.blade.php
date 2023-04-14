@@ -13,14 +13,14 @@ Aina | Accueil
     <div class="row justify-content-between">
       <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
         <div data-aos="zoom-out">
-          <h1>Votre plateforme de rédaction <span>sur mesure</span></h1>
+          <h1>Votre plateforme de rédaction sur mesure </h1>
           <h5 class="text-white">Bénéficiez du professionnalisme, du savoir-faire et l'expertise de notre équipe pour la rédaction de vos textes, rapidement et sans effort.</h5>
           <div class="d-flex">
             <div class="text-center  text-lg-start flex-grow-1">
               <a href="{{ route('tarif') }}" class="btn-get-started scrollto">Commander des textes</a>
             </div>
             <div class="text-center text-lg-start flex-grow-1">
-              <a href="{{ route('tarif') }}" class="btn-get-started scrollto ">Demander un devis</a>
+              <a href="{{ route('orderquote') }}" class="btn-get-started scrollto ">Demander un devis</a>
             </div>
           </div>
         </div>
@@ -222,9 +222,9 @@ Aina | Accueil
             Souhaitez-vous étayer vos besoins toute sur une année ? vous avez la possibilité de regrouper vos commandes ou d’opter pour les packs de crédits afin de profiter d’un meilleur tarif <b>jusqu'à -30%</b>.
           </p>
           <div class="icon-box d-flex text-align-center">
-            <div class="icon flex-grow-1" style="margin-right: 1em;"><img src="assets/img/gallery/whatsap.svg" width="80px" height="60px"></div>
-            <p class="flex-grow-1">
-              Contactez-nous au <span class="text-success">+237 698 307 457</span> du lundi à samedi de 9h à 18h afin de bénéficier d’un meilleur prix sur votre commande.
+            <div class="icon flex-grow-1" style="margin-right: 1em;"><img src="assets/img/gallery/whatsap.svg" width="30px" height="30px"></div>
+            <p class="flex-grow-1 fs-6 col-lg-12">
+              Contactez-nous du lundi à samedi de 9h à 18h afin de bénéficier d’un meilleur prix sur votre commande.
             </p>
           </div>
         </div>
@@ -280,9 +280,9 @@ Aina | Accueil
             </div>
             <div class="content mt-4">
               <h5 class="title">Traduction</h5>
-              <p class="text-muted mt-3 mb-0">Sollicitez les services de notre <br> agence de traduction.</p>
+              <p class="text-muted mt-3 mb-0">Sollicitez les services de notre agence <br> de traduction.</p>
               <div class="mt-3">
-                <a href="{{route('integration')}}" class="text-custom fw-bold">Lire plus...<i class="mdi mdi-chevron-right"></i></a>
+                <a href="{{route('traduction')}}" class="text-custom fw-bold">Lire plus...<i class="mdi mdi-chevron-right"></i></a>
               </div>
             </div>
 
@@ -308,9 +308,9 @@ Aina | Accueil
             </div>
             <div class="content mt-4">
               <h5 class="title">Intégration</h5>
-              <p class="text-muted mt-3 mb-0">Externaliser L'intégrité <br> de vos contenus web.</p>
+              <p class="text-muted mt-3 mb-0">Externaliser L'intégrité de vos contenus web.</p>
               <div class="mt-3">
-                <a href="{{route('traduction')}}" class="text-custom fw-bold">Lire plus...<i class="mdi mdi-chevron-right"></i></a>
+                <a href="{{route('integration')}}" class="text-custom fw-bold">Lire plus...<i class="mdi mdi-chevron-right"></i></a>
               </div>
             </div>
             <div class="big-icon h1 text-custom">
@@ -328,8 +328,16 @@ Aina | Accueil
       </div><!--end row-->
     </div>
   </section>
-
   <!-- End section services -->
+
+  <div class="container-fluid section-card">
+    <div class="row" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-lg-12 mt-3" style="height: 400px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15919.398942129286!2d9.7678687!3d4.0510564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610ddf3daa48b9%3A0x3361faf4cace0140!2sAxa%20Assurance%20-%20Douala!5e0!3m2!1sfr!2scm!4v1681376701421!5m2!1sfr!2scm" class="h-100 w-100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
 
 </main><!-- End #main -->
 

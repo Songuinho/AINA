@@ -126,7 +126,7 @@ Aina | Redaction
         </div>
 
         <div class="row content">
-            <div class="col-md-4 order-1 order-md-2 mt-5"  id="redactor" data-aos="fade-left">
+            <div class="col-md-4 order-1 order-md-2 mt-5" id="redactor" data-aos="fade-left">
                 <img src="assets/img/aina_pictures/traduction.jpg" class="img-fluid animated rounded-3" alt="">
             </div>
             <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
@@ -136,12 +136,14 @@ Aina | Redaction
                 </p>
                 <div class="d-flex" data-aos="zoom-out">
                     <div class="btn-wrap pricing mt-3" id="pricing">
-                        <a href="{{ route('orderquote') }}" class="btn-buy">Commander des textes</a>
+                        <a href="{{ route('tarif') }}" class="btn-buy">Commander des textes</a>
                     </div>
                 </div>
             </div>
         </div>
 </section>
 
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div id="preloader"></div>
 
 @endsection
