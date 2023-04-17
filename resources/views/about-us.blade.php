@@ -13,7 +13,7 @@ Aina | A propos de nous
         <div class="row justify-content-center">
             <div class="align-items-center">
                 <div data-aos="zoom-out">
-                    <h4 class="text-white">A propos d' AINA.</h4>
+                    <h4 class="text-white fs-2">A propos d' AINA</h4>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@ Aina | A propos de nous
 
         <div class="row">
             <div data-aos="fade-up">
-                <h3 class="text-info">Notre agence.</h3>
+                <h3 class="text-info">Notre agence</h3>
             </div>
             <div data-aos="fade-up">
                 <p>
@@ -39,7 +39,7 @@ Aina | A propos de nous
 
         <div class="row mt-5">
             <div data-aos="fade-up">
-                <h3 class="text-info">Notre Vision.</h3>
+                <h3 class="text-info">Notre Vision</h3>
             </div>
             <div data-aos="fade-up">
                 <p>
@@ -58,7 +58,7 @@ Aina | A propos de nous
     <div class="container">
 
         <div class="row " data-aos="fade-up">
-            <h3 class="text-info" style="margin-bottom: 2em;">Notre équipe.</h3>
+            <h3 class="text-info" style="margin-bottom: 2em;">Notre équipe</h3>
         </div>
 
         <div class="row mt-5" data-aos="fade-left">
@@ -71,9 +71,9 @@ Aina | A propos de nous
                         <h4>Ondobo Okala Fabrice</h4>
                         <span>Rédacteur</span>
                         <div class="social">
-                            <a href=""><i class="bi bi-whatsapp"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
+                            <a><i class="bi bi-whatsapp"></i></a>
+                            <a><i class="bi bi-facebook"></i></a>
+                            <a><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -87,9 +87,9 @@ Aina | A propos de nous
                         <h4>Tchounkeu Nana</h4>
                         <span>Chef de projet</span>
                         <div class="social">
-                            <a href=""><i class="bi bi-whatsapp"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
+                            <a><i class="bi bi-whatsapp"></i></a>
+                            <a><i class="bi bi-facebook"></i></a>
+                            <a><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -103,9 +103,9 @@ Aina | A propos de nous
                         <h4>Lieukap Kamnang</h4>
                         <span>Intégrateur</span>
                         <div class="social">
-                            <a href=""><i class="bi bi-whatsapp"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
+                            <a><i class="bi bi-whatsapp"></i></a>
+                            <a><i class="bi bi-facebook"></i></a>
+                            <a><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -119,9 +119,9 @@ Aina | A propos de nous
                         <h4>Tsobgni Yann</h4>
                         <span>Rédacteur et Traducteur</span>
                         <div class="social">
-                            <a href=""><i class="bi bi-whatsapp"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
+                            <a><i class="bi bi-whatsapp"></i></a>
+                            <a><i class="bi bi-facebook"></i></a>
+                            <a><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>

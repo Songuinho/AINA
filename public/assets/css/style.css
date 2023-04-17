@@ -1666,7 +1666,9 @@ p{
 
 #redacteur {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/hero-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   margin-top: 5em;
   height: 200px;
@@ -1674,13 +1676,14 @@ p{
 
 #redacteur:before {
   content: "";
-  background: #bde8eae6;
+  background: #d8edeee6;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
 }
+
 
 #change-bg-2 a:hover{
   color:#fff;
@@ -1870,14 +1873,14 @@ p{
 
 #tarif-hero{
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/aina_pictures/cta.jpg");
   position: relative;
   margin-top: 5em;
   height: 200px;
   margin-bottom: 5em;
 }
 
-#tarif-hero:before {
+/* #tarif-hero:before {
   content: "";
   background: #a2e3e7e6;
   position: absolute;
@@ -1885,25 +1888,17 @@ p{
   top: 0;
   left: 0;
   right: 0;
-}
+} */
 
 #about-hero{
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/aina_pictures/contact-bg.jpg");
   position: relative;
   margin-top: 5em;
-  height: 200px;
+  text-align: center;
+  height: 350px;
 }
 
-#about-hero:before {
-  content: "";
-  background: #a2e3e7e6;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
 .about-team {
   background: #fbffff;

@@ -44,8 +44,8 @@ Aina | Commander un devis
             @endif
         </div>
 
-        <div class="section-title" data-aos="fade-up">
-            <p>Nous contacter</p>
+        <div data-aos="fade-up">
+            <p>Envoyer nous votre besoin.</p>
         </div>
 
         <div class="row">

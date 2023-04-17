@@ -3,10 +3,10 @@
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo" style="margin-top: 1em;">
-      <h1 class="text-dark"><a href="{{ route('home') }}"><span class="text-dark">AiNa</span></a></h1>
-      <h6 class="text-dark"><span><i>Les bons mots qui vous démarquent...</i></span></h6>
+      <!-- <h1 class="text-dark"><a href="{{ route('home') }}"><span class="text-dark">AiNa</span></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <a href="{{ route('home') }}"><img src="assets/img/aina_pictures/logo2.svg" alt="" class="img-fluid"></a>
+      <h6 class="text-dark"><span><i>Les bons mots qui vous démarquent...</i></span></h6>
     </div>
 
     <nav id="navbar" class="navbar">
