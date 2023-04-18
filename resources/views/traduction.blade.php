@@ -114,10 +114,10 @@ Aina | Redaction
             <div class="col-md-8 pt-4" data-aos="fade-up">
                 <h3>Fonctionnement</h3>
                 <p>
-                    Nous avons un mode de fonctionnement rapide, il permet de nous adapter à tous vos bésoins. Pour pouvoir vous aidez à avoir des meilleurs traductions, nous travaillons du plus simple au plus important ainsi definie tel-que :
+                    Nous avons un mode de fonctionnement rapide, il permet de nous adapter à tous vos besoin. Pour pouvoir vous aidez à avoir des meilleurs traductions, nous travaillons du plus simple au plus important ainsi definie tel-que :
                 </p>
                 <ul>
-                    <li><i class="bi bi-check"></i> L'identification des bésoins.</li>
+                    <li><i class="bi bi-check"></i> L'identification des besoin.</li>
                     <p>Ici, vous dévrez définir vos besoins, énumérer minussieusement vos attentes pour la traduction de vos contenus puis faire le paiement de votre commande pour nous permettre de transmettre cela au rédacteur. </p>
                     <li><i class="bi bi-check"></i> L'optention des traductions.</li>
                     <p>Une fois la transaction finie, vous pourriez échanger avec notre chef de projet. S'il arrive que les textes traduis ne sont pas à votre convénance, de ce part, vous pourrez demander des modifications qui ne seront pas facturées.</p>

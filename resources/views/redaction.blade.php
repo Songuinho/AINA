@@ -31,8 +31,8 @@ Aina | Redaction
                 </div>
 
                 <div class="row col-md-12">
-                    <h4 class="mb-2">Décrivez vos bésoins <br> et vos consignes </h4>
-                    <p class="mb-3">Identifier vos consignes de rédaction et indiquer vos options(HTML, SEO et recherches). Sélectioner en quelques cliques sur notre formulaires de commande vos bésoins.</p>
+                    <h4 class="mb-2">Décrivez vos besoins <br> et vos consignes </h4>
+                    <p class="mb-3">Identifier vos consignes de rédaction et indiquer vos options(HTML, SEO et recherches). Sélectioner en quelques cliques sur notre formulaires de commande vos besoins.</p>
                 </div>
 
                 <hr class="mt-3 text-dark h-5">
