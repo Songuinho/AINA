@@ -128,8 +128,9 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: #4c8bcee6;
-  height: 90px;
+  background: #9cbee1e6;
+  color:#fff;
+  height: 95px;
 }
 
 #header .logo h1 {
@@ -1491,7 +1492,7 @@ p{
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #2766aae6;
+  background: #3b77b7e6;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
