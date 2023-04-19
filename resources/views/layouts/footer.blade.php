@@ -58,7 +58,7 @@
 
   <div class="container">
     <div class="copyright">
-      <strong><span>AINA </span></strong>Copyright &copy; 2023-2024
+      <strong><span>AINA </span></strong>Copyright &copy; 2023
     </div>
   </div>
 </footer><!-- End Footer -->

@@ -42,9 +42,6 @@ class MailController extends Controller
             $this->data["file"] = $fullnamefile;
         }
 
-        // $request->session()->regenerate();
-        // dd($this->data["name"]);
-
         try {
             Mail::send(
 
@@ -72,7 +69,7 @@ class MailController extends Controller
                 return redirect()->back()->with($request->session()->flash("message", "Message envoyé avec succès !"));
 
         } catch (\Exception $e) {
-            return redirect()->back()->with($request->session()->flash('Errormessage', 'Ooupssss!!! problème de connexion svp! veillez réesayer plus tard. Si le problème persiste bien vouloir nous joindre par Mail (aina.redaction@yahoo.com) ou appelez nous au +237 698 307 457. '));
+            return redirect()->back()->with($request->session()->flash('Errormessage', 'Ooupssss!!! problème de connexion s\'il vous plait veillez réesayer plus tard. Si le problème persiste bien vouloir nous joindre par Mail (aina.redaction@yahoo.com) ou appelez notre équipe au +237 698 307 457. '));
         }
     }
 
@@ -94,7 +91,6 @@ class MailController extends Controller
         ]);
 
         $this->data = ["mail" => $request->emailsubscribe];
-        dd($request->session());
 
         try {
             Mail::send("subscribe_mail", ["email" => $request->emailsubscribe], function ($msg) {
@@ -105,7 +101,7 @@ class MailController extends Controller
 
             return redirect()->back()->with($request->session()->flash("subscribemessage", "Souscription effectuée avec succès !"));
         } catch (\Exception $e) {
-            return redirect()->back()->with($request->session()->flash('Errorsubscribemessage', 'Ooupssss!!! problème de connexion svp! veillez réesayer plus tard. Si le problème persiste bien vouloir nous joindre par Mail (aina.redaction@yahoo.com) ou appelez nous au +237 698 307 457. '));
+            return redirect()->back()->with($request->session()->flash('Errorsubscribemessage', 'Ooupssss!!! problème de connexion s\'il vous plait veillez réesayer plus tard. Si le problème persiste bien vouloir nous joindre par Mail (aina.redaction@yahoo.com) ou appelez notre équipe au +237 698 307 457. '));
         }
     }
 }

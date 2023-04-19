@@ -1939,3 +1939,7 @@ p{
   background-size: cover;
   position: relative;
 }
+
+#home-img{
+  object-fit: contain;
+}

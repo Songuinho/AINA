@@ -11,22 +11,20 @@ Aina | Accueil
 
   <div class="container">
     <div class="row justify-content-between">
-      <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-        <div data-aos="zoom-out">
-          <h1>Votre plateforme de rédaction sur mesure </h1>
-          <h5 class="text-white">Bénéficiez du professionnalisme, du savoir-faire et l'expertise de notre équipe pour la rédaction de vos textes, rapidement et sans effort.</h5>
-          <div class="d-flex">
-            <div class="text-center  text-lg-start flex-grow-1">
-              <a href="{{ route('tarif') }}" class="btn-get-started scrollto">Commander des textes</a>
-            </div>
-            <div class="text-center text-lg-start flex-grow-1">
-              <a href="{{ route('orderquote') }}" class="btn-get-started scrollto ">Demander un devis</a>
-            </div>
+      <div class="col-7 col-md-6 col-lg-8 order-2 order-lg-1" data-aos="zoom-out">
+        <h1>Votre plateforme de rédaction sur mesure </h1>
+        <h5 class="text-white">Bénéficiez du professionnalisme, du savoir-faire et l'expertise de notre équipe pour la rédaction de vos textes, rapidement et sans effort.</h5>
+        <div class="d-flex">
+          <div class="text-center  text-lg-start flex-grow-1">
+            <a href="{{ route('tarif') }}" class="btn-get-started scrollto">Commander des textes</a>
+          </div>
+          <div class="text-center text-lg-start flex-grow-1">
+            <a href="{{ route('orderquote') }}" class="btn-get-started scrollto ">Demander un devis</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-5 col-xs-6 order-1 order-md-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-        <img src="assets/img/aina_pictures/femme.jpg" height="400px" class="img-fluid animated rounded-1" alt="">
+      <div class="col-5 col-md-6 col-lg-4 order-1 order-lg-1 hero-img" data-aos="zoom-out" data-aos-delay="300">
+        <img src="assets/img/aina_pictures/femme.jpg" id="home-img" class="img-fluid animated rounded-2" alt="">
       </div>
     </div>
   </div>
@@ -129,7 +127,7 @@ Aina | Accueil
 
       <div class="carousel-item active">
         <img src="{{ asset('assets/img/aina_pictures/proredacteur.jpg') }}" height="600" class="d-block w-100" alt="">
-        <div class="carousel-caption d-none d-md-block text-dark">
+        <div class=" carousel-caption d-none d-md-block text-dark">
           <h3>Obtenez des textes rédigés à 100% par les humains et cela sans duplicate content.</h3>
           <p>
             <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -143,7 +141,7 @@ Aina | Accueil
 
       <div class="carousel-item">
         <img src="{{ asset('assets/img/aina_pictures/sollicite_expertise.jpg') }}" height="600" class="d-block w-100" alt="">
-        <div class="carousel-caption d-none d-md-block text-dark">
+        <div class=" carousel-caption d-none d-md-block text-dark">
           <h3>Sollicitez l’expertise de nos professionnels et commander les textes sur mesure pour votre société.</h3>
           <div class="bg-primary border p-4 rounded-pill text-white">
             <p>
@@ -158,7 +156,7 @@ Aina | Accueil
 
       <div class="carousel-item">
         <img src="{{ asset('assets/img/aina_pictures/seo.png') }}" height="600" class="d-block w-100" alt="assets/img/gallery/degressive.svg">
-        <div class="carousel-caption d-none d-md-block text-white">
+        <div class=" carousel-caption d-none d-md-block text-white">
           <h3 class="text-dark">Recevez des contenus SEO orientés pour les visiteurs</h3>
           <div class="bg-primary border p-4 rounded-pill">
             <p>
@@ -172,8 +170,8 @@ Aina | Accueil
 
       <div class="carousel-item">
         <img src="{{ asset('assets/img/aina_pictures/directrice.jpg') }}" height="600" class="d-block w-100" alt="">
-        <div class="carousel-caption d-none d-md-block  text-white">
-          <h3 class="text-dark">Notre directrice de projets dédiée vous permet de gagner du temps.</h3>
+        <div class=" carousel-caption d-none d-md-block  text-white">
+          <h3 class="text-dark">Notre directrice de projets dédiée vous permet de gagner du temps.</h3text-dark>
           <div class="bg-primary p-2 border rounded-pill">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
